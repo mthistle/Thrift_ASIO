@@ -69,6 +69,9 @@ class t_cpp_generator : public t_oop_generator {
     iter = parsed_options.find("templates");
     gen_templates_ = (iter != parsed_options.end());
 
+    iter = parsed_options.find("async");
+    gen_async_ = (iter != parsed_options.end());
+
     out_dir_base_ = "gen-cpp";
   }
 
@@ -105,7 +108,8 @@ class t_cpp_generator : public t_oop_generator {
                                       bool pointers=false,
                                       bool read=true,
                                       bool write=true,
-                                      bool swap=false);
+                                      bool swap=false,
+				      bool typedefs = false);
   void generate_struct_fingerprint   (std::ofstream& out, t_struct* tstruct, bool is_definition);
   void generate_struct_reader        (std::ofstream& out, t_struct* tstruct, bool pointers=false);
   void generate_struct_writer        (std::ofstream& out, t_struct* tstruct, bool pointers=false);
@@ -128,6 +132,14 @@ class t_cpp_generator : public t_oop_generator {
                                    string style, bool specialized=false);
   void generate_function_helpers  (t_service* tservice, t_function* tfunction);
   void generate_service_async_skeleton (t_service* tservice);
+
+  /**
+   * Service-level async generation functions
+   */
+	void generate_async_interface(t_service* tservice);
+	void generate_async_client(t_service* tservice);
+  void generate_async_processor (t_service* tservice);
+  void generate_async_process_function  (t_service* tservice, t_function* tfunction);
 
   /**
    * Serialization constructs
@@ -205,6 +217,8 @@ class t_cpp_generator : public t_oop_generator {
   std::string argument_list(t_struct* tstruct, bool name_params=true, bool start_comma=false);
   std::string type_to_enum(t_type* ttype);
   std::string local_reflection_name(const char*, t_type* ttype, bool external=false);
+  std::string async_function_signature(t_service* tservice, t_function* tfunction, std::string method_prefix="", std::string return_prefix="", bool name_params=true);
+  std::string async_recv_signature(t_service* tservice, t_function* tfunction, std::string prefix="", bool name_params=true);
 
   void generate_enum_constant_list(std::ofstream& f,
                                    const vector<t_enum_value*>& constants,
@@ -246,6 +260,11 @@ class t_cpp_generator : public t_oop_generator {
    * True if we should generate local reflection metadata for TDenseProtocol.
    */
   bool gen_dense_;
+
+  /**
+   * True if we should generate asynchronous callback code.
+   */
+  bool gen_async_;
 
   /**
    * True if we should generate templatized reader/writer methods.
@@ -348,6 +367,15 @@ void t_cpp_generator::init_generator() {
     "#include <protocol/TProtocol.h>" << endl <<
     "#include <transport/TTransport.h>" << endl <<
     endl;
+	if (gen_async_) {
+		f_types_ <<
+			"#include <boost/bind.hpp>" << endl <<
+		        "#include <boost/function.hpp>" << endl <<
+                        "#include <async/TAsync.h>" << endl <<
+                        "#include <async/TFuture.h>" << endl <<
+                        "#include <concurrency/Mutex.h>" << endl <<
+			endl;
+	}
 
   // Include other Thrift includes
   const vector<t_program*>& includes = program_->get_includes();
@@ -781,7 +809,8 @@ void t_cpp_generator::generate_struct_definition(ofstream& out,
                                                  bool pointers,
                                                  bool read,
                                                  bool write,
-                                                 bool swap) {
+                                                 bool swap,
+						 bool typedefs) {
   string extends = "";
   if (is_exception) {
     extends = " : public ::apache::thrift::TException";
@@ -902,6 +931,36 @@ void t_cpp_generator::generate_struct_definition(ofstream& out,
       indent() << "virtual ~" << tstruct->get_name() << "() throw() {}" << endl << endl;
   }
 
+  if (typedefs) {
+    // Add typedef so that we can use as types:
+    // - Calculator_add_result::success_t
+    // - Calculator_add_result::failure_t
+    // - Calculator_add_result::success_nonvoid_t (which replaces void with bool)
+    // - Calculator_add_result::success_constref_t (which changes to const& for complex types)
+    // This is useful when templatizing over result objects.
+
+    map<string, t_type*> typedef_types;
+
+    for (m_iter = members.begin(); m_iter != members.end(); ++m_iter) {
+      t_type* t = get_true_type((*m_iter)->get_type());
+      typedef_types[(*m_iter)->get_name()] = t;
+    }
+
+    map<string, string> typedef_names;
+
+    typedef_names["success_t"] = typedef_types["success"] ? type_name(typedef_types["success"]) : "void";
+    typedef_names["failure_t"] = typedef_types["failure"] ? type_name(typedef_types["failure"]) : "void";
+    typedef_names["success_nonvoid_t"] = typedef_names["success_t"] != "void" ? typedef_names["success_t"] : "bool";
+    typedef_names["success_constref_t"] = (typedef_types["success"] && is_complex_type(typedef_types["success"]))
+      ? "const " + type_name(typedef_types["success"]) + "&"
+      : typedef_names["success_t"];
+    typedef_names["success_constref_nonvoid_t"] = typedef_names["success_constref_t"] != "void" ? typedef_names["success_constref_t"] : "bool";
+
+    for (map<string, string>::const_iterator i = typedef_names.begin(); i != typedef_names.end(); ++i) {
+      indent(out) << "typedef " << i->second << " " << i->first << ";" << endl;
+    }
+  }
+
   // Pointer to this structure's reflection local typespec.
   if (gen_dense_) {
     indent(out) <<
@@ -955,6 +1014,8 @@ void t_cpp_generator::generate_struct_definition(ofstream& out,
       (members.size() > 0 ? "rhs" : "/* rhs */") << ") const" << endl;
     scope_up(out);
     for (m_iter = members.begin(); m_iter != members.end(); ++m_iter) {
+			if (gen_async_ && (*m_iter)->get_name() == "failure")
+				continue;
       // Most existing Thrift code does not use isset or optional/required,
       // so we treat "default" fields as required.
       if ((*m_iter)->get_req() != t_field::T_OPTIONAL) {
@@ -1649,6 +1710,12 @@ void t_cpp_generator::generate_service(t_service* tservice) {
   generate_service_multiface(tservice);
   generate_service_skeleton(tservice);
 
+  if (gen_async_) {
+    generate_async_interface(tservice);
+    generate_async_client(tservice);
+    generate_async_processor(tservice);
+  }
+
   // Generate all the cob components
   if (gen_cob_style_) {
     generate_service_interface(tservice, "CobCl");
@@ -1874,6 +1941,89 @@ void t_cpp_generator::generate_service_interface_factory(t_service* tservice,
 }
 
 /**
+ * Generates a service asynchronous callback interface definition.
+ *
+ * @param tservice The service to generate a header definition for
+ */
+void t_cpp_generator::generate_async_interface(t_service* tservice) {
+
+  string extends = "";
+  if (tservice->get_extends() != NULL) {
+    extends = " : virtual public " + type_name(tservice->get_extends()) + "AsyncIf";
+  }
+  f_header_ <<
+    "class " << service_name_ << "AsyncIf" << extends << " {" << endl <<
+    " public:" << endl;
+  indent_up();
+
+  // First, generate all the controller typedefs outside the class
+
+  vector<t_function*> functions = tservice->get_functions();
+  vector<t_function*>::iterator f_iter;
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    t_function* tfunction = *f_iter;
+    if (!tfunction->is_oneway()) {
+      // t_type* ttype = tfunction->get_returntype();
+      f_header_ << indent() << "typedef apache::thrift::async::TSharedPromise<" + tservice->get_name() + "_" + tfunction->get_name() + "_result> " + tfunction->get_name() + "_shared_promise_t;" << endl;
+      f_header_ << indent() << "typedef apache::thrift::async::TSharedFuture<" + tservice->get_name() + "_" + tfunction->get_name() + "_result> " + tfunction->get_name() + "_shared_future_t;" << endl;
+    }
+  }
+  
+  f_header_ << endl;
+  
+  // Generate constructors and destructors
+
+  f_header_ <<
+    indent() << "virtual ~" << service_name_ << "AsyncIf() {}" << endl;
+
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    f_header_ <<
+      indent() << "virtual " << async_function_signature(tservice, *f_iter) << " = 0;" << endl;
+  }
+
+  // Callback result typedefs and convenience functions
+  f_header_ << endl;
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    if (!(*f_iter)->is_oneway()) {
+      string resultname = (*f_iter)->get_name() + "_result";
+      indent(f_header_) << 
+	"typedef " << tservice->get_name() << "_" << resultname << " " << resultname << ";" << endl;
+      vector<t_field*>::iterator ff_iter;
+      vector<t_field*> results = (*f_iter)->get_xceptions()->get_members();
+      
+      t_field success((*f_iter)->get_returntype(), "success", 0);
+      if (!(*f_iter)->get_returntype()->is_void()) {
+	results.insert(results.begin(), &success);
+      }
+      t_struct exc(NULL, "apache::thrift::TApplicationException");
+      t_field failure(&exc, "failure", -1337); // FIXME: failure field id
+      results.insert(results.begin(), &failure);
+      for (ff_iter = results.begin(); ff_iter != results.end(); ++ff_iter) {
+	indent(f_header_) <<
+	  "static " << resultname << " " << (*f_iter)->get_name() << "_" << (*ff_iter)->get_name() << "(" << type_name((*ff_iter)->get_type()) << " " << (*ff_iter)->get_name() << ");" << endl;
+	// Implementation
+	indent_down();
+	f_service_ <<
+	  indent() << service_name_ << "AsyncIf::" << resultname << " " << service_name_ << "AsyncIf::" << (*f_iter)->get_name() << "_" << (*ff_iter)->get_name() << "(" << type_name((*ff_iter)->get_type()) << " " << (*ff_iter)->get_name() << ")" << endl;
+	scope_up(f_service_);
+	f_service_ <<
+	  indent() << resultname << " result;" << endl <<
+	  indent() << "result." << (*ff_iter)->get_name() << " = " << (*ff_iter)->get_name() << ";" << endl <<
+	  indent() << "result.__isset." << (*ff_iter)->get_name() << " = true;" << endl <<
+	  indent() << "return result;" << endl;
+	scope_down(f_service_);
+	f_service_ << endl;
+	indent_up();
+      }
+    }
+  }
+  
+  indent_down();
+  f_header_ <<
+    "};" << endl << endl;
+}
+
+/**
  * Generates a null implementation of the service.
  *
  * @param tservice The service to generate a header definition for
@@ -1910,13 +2060,13 @@ void t_cpp_generator::generate_service_null(t_service* tservice, string style) {
     } else if (style == "CobSv") {
       if (returntype->is_void()) {
         f_header_ << indent() << "return cob();" << endl;
-    } else {
-      t_field returnfield(returntype, "_return");
-      f_header_ <<
-        indent() << declare_field(&returnfield, true) << endl <<
-        indent() << "return cob(_return);" << endl;
-    }
-
+      } else {
+	t_field returnfield(returntype, "_return");
+	f_header_ <<
+	  indent() << declare_field(&returnfield, true) << endl <<
+	  indent() << "return cob(_return);" << endl;
+      }
+      
     } else {
       throw "UNKNOWN STYLE";
     }
@@ -2157,6 +2307,316 @@ void t_cpp_generator::generate_service_multiface(t_service* tservice) {
   f_header_ <<
     indent() << "};" << endl <<
     endl;
+}
+
+/**
+ * Generates a service async client definition.
+ *
+ * @param tservice The service to generate an async client for.
+ */
+void t_cpp_generator::generate_async_client(t_service* tservice) {
+  string extends = "";
+  string extends_client = "";
+	string extends_processor = "";
+  if (tservice->get_extends() != NULL) {
+    extends = type_name(tservice->get_extends());
+    extends_client = ", public " + extends + "AsyncClient";
+  }
+	else {
+		extends_processor = ", public apache::thrift::TProcessor";
+	}
+
+  // Generate the header portion
+  f_header_ <<
+    "class " << service_name_ << "AsyncClient : " <<
+    "virtual public " << service_name_ << "AsyncIf" <<
+    extends_client << extends_processor << " {" << endl <<
+    " public:" << endl;
+
+  indent_up();
+  f_header_ <<
+    indent() << service_name_ << "AsyncClient(boost::shared_ptr<apache::thrift::transport::TTransport> ot, boost::shared_ptr<apache::thrift::protocol::TProtocolFactory> opf) :" << endl;
+  if (extends.empty()) {
+    f_header_ <<
+      indent() << "  potransport_(ot)," << endl <<
+      indent() << "  poprotfact_(opf)," << endl <<
+      indent() << "  request_counter_(0) {" << endl <<
+      indent() << "  otransport_ = ot.get();" << endl <<
+      indent() << "  oprotfact_ = opf.get();" << endl <<
+      indent() << "}" << endl;
+  } else {
+    f_header_ <<
+      indent() << "  " << extends << "AsyncClient(ot, opf) {}" << endl;
+  }
+
+  // Generate getters for the transport and protocol factory.
+  f_header_ <<
+    indent() << "boost::shared_ptr<apache::thrift::transport::TTransport> getOutputTransport() {" << endl <<
+    indent() << "  return potransport_;" << endl <<
+    indent() << "}" << endl;
+  f_header_ <<
+    indent() << "boost::shared_ptr<apache::thrift::protocol::TProtocolFactory> getOutputProtocolFactory() {" << endl <<
+    indent() << "  return poprotfact_;" << endl <<
+    indent() << "}" << endl;
+
+  vector<t_function*> functions = tservice->get_functions();
+  vector<t_function*>::const_iterator f_iter;
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    t_function send_function(g_type_void,
+                             string("send_") + (*f_iter)->get_name(),
+                             (*f_iter)->get_arglist());
+    indent(f_header_) << async_function_signature(tservice, *f_iter) << ";" << endl;
+    indent(f_header_) << function_signature(&send_function, "") << ";" << endl;
+    if (!(*f_iter)->is_oneway()) {
+      //t_struct noargs(program_);
+      //t_function recv_function((*f_iter)->get_returntype(),
+      //                         string("recv_") + (*f_iter)->get_name(),
+      //                         &noargs);
+      //indent(f_header_) << function_signature(&recv_function, "") << ";" << endl;
+			//indent(f_header_) << "void " << "recv_" << (*f_iter)->get_name() << "(apache::thrift::protocol::TProtocol* iprot, std::string fname, apache::thrift::protocol::TMessageType mtype);" << endl;
+			indent(f_header_) << async_recv_signature(tservice, *f_iter) << ";" << endl;
+    }
+  }
+  if (extends.empty()) {
+		f_header_ <<
+			indent() << "bool abort(int32_t request_id) {" << endl <<
+                        indent() << "apache::thrift::concurrency::Guard g(mutex_);" << endl <<
+			indent() << "  return requests_.erase(request_id) != 0;" << endl <<
+			indent() << "}" << endl;
+  }
+  indent(f_header_) << "bool process(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, void* connectionContext);" << endl;
+
+  indent_down();
+
+  if (extends.empty()) {
+    f_header_ <<
+      " protected:" << endl;
+    indent_up();
+    f_header_ <<
+      indent() << "boost::shared_ptr<apache::thrift::transport::TTransport> potransport_;" << endl <<
+      indent() << "boost::shared_ptr<apache::thrift::protocol::TProtocolFactory> poprotfact_;"  << endl <<
+      indent() << "apache::thrift::transport::TTransport* otransport_;" << endl <<
+      indent() << "apache::thrift::protocol::TProtocolFactory* oprotfact_;"  << endl <<
+      indent() << "typedef std::map<int32_t, boost::function<void (boost::shared_ptr<apache::thrift::protocol::TProtocol> prot, std::string fname, apache::thrift::protocol::TMessageType mtype)> > request_map_t;" << endl <<
+      indent() << "request_map_t requests_;" << endl <<
+      indent() << "int32_t request_counter_;" << endl <<
+      indent() << "apache::thrift::concurrency::Mutex mutex_;";
+    indent_down();
+  }
+
+  f_header_ <<
+    "};" << endl <<
+    endl;
+
+  string scope = service_name_ + "AsyncClient::";
+  string typedef_scope = service_name_ + "AsyncIf::";
+
+  // Generate async client method implementations
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    string funname = (*f_iter)->get_name();
+
+    // Open function
+    indent(f_service_) <<
+      async_function_signature(tservice, *f_iter, scope, typedef_scope) << endl;
+    scope_up(f_service_);
+    indent(f_service_) <<
+      "send_" << funname << "(";
+
+    // Get the struct of function call params
+    t_struct* arg_struct = (*f_iter)->get_arglist();
+
+    // Declare the function arguments
+    const vector<t_field*>& fields = arg_struct->get_members();
+    vector<t_field*>::const_iterator fld_iter;
+    bool first = true;
+    for (fld_iter = fields.begin(); fld_iter != fields.end(); ++fld_iter) {
+      if (first) {
+        first = false;
+      } else {
+        f_service_ << ", ";
+      }
+      f_service_ << (*fld_iter)->get_name();
+    }
+    f_service_ << ");" << endl;
+
+    if (!(*f_iter)->is_oneway()) {
+      string promise_type = (*f_iter)->get_name() + "_shared_promise_t";
+      f_service_ << indent() << promise_type << " promise;" << endl;
+      f_service_ << indent() << "apache::thrift::concurrency::Guard g(mutex_);" << endl;
+      f_service_ << indent() << "requests_[request_counter_] = boost::bind(&" << scope << "recv_" << funname << ", this, _1 /* piprot */, _2 /* fname */, _3 /* mtype */, promise);" << endl;
+      f_service_ << indent() << "return promise;" << endl;
+			/*
+      f_service_ << indent();
+      if (!(*f_iter)->get_returntype()->is_void()) {
+        if (is_complex_type((*f_iter)->get_returntype())) {
+          f_service_ << "recv_" << funname << "(_return);" << endl;
+        } else {
+          f_service_ << "return recv_" << funname << "();" << endl;
+        }
+      } else {
+        f_service_ <<
+          "recv_" << funname << "();" << endl;
+      }
+			*/
+    }
+		else {
+			f_service_ << indent() << "return; // one-way" << endl;
+		}
+    scope_down(f_service_);
+    f_service_ << endl;
+
+    // Function for sending
+    t_function send_function(g_type_void,
+                             string("send_") + (*f_iter)->get_name(),
+                             (*f_iter)->get_arglist());
+
+    // Open the send function
+    indent(f_service_) <<
+      function_signature(&send_function, "", scope) << endl;
+    scope_up(f_service_);
+
+    // Function arguments and results
+    string argsname = tservice->get_name() + "_" + (*f_iter)->get_name() + "_pargs";
+    string resultname = tservice->get_name() + "_" + (*f_iter)->get_name() + "_result";
+
+    // Serialize the request
+    f_service_ <<
+			indent() << "boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot = oprotfact_->getProtocol(potransport_);" << endl <<
+			indent() << "apache::thrift::protocol::TProtocol* oprot = poprot.get();" << endl <<
+      indent() << "apache::thrift::concurrency::Guard g(mutex_); // for oprot and request_counter_" << endl <<
+      indent() << "if (++request_counter_ < 0)" << endl <<
+      indent() << "  request_counter_ = 1;" << endl <<
+      indent() << "int32_t cseqid = request_counter_;" << endl <<
+      indent() << "oprot->writeMessageBegin(\"" << (*f_iter)->get_name() << "\", apache::thrift::protocol::T_CALL, cseqid);" << endl <<
+      endl <<
+      indent() << argsname << " args;" << endl;
+
+    for (fld_iter = fields.begin(); fld_iter != fields.end(); ++fld_iter) {
+      f_service_ <<
+        indent() << "args." << (*fld_iter)->get_name() << " = &" << (*fld_iter)->get_name() << ";" << endl;
+    }
+
+    f_service_ <<
+      indent() << "args.write(oprot);" << endl <<
+      endl <<
+      indent() << "oprot->writeMessageEnd();" << endl <<
+      indent() << "oprot->getTransport()->flush();" << endl <<
+      indent() << "oprot->getTransport()->writeEnd();" << endl;
+
+    scope_down(f_service_);
+    f_service_ << endl;
+
+    // Generate recv function only if not an oneway function
+    if (!(*f_iter)->is_oneway()) {
+      t_struct noargs(program_);
+      t_function recv_function((*f_iter)->get_returntype(),
+                               string("recv_") + (*f_iter)->get_name(),
+                               &noargs);
+
+      // Open function
+			indent(f_service_) << async_recv_signature(tservice, *f_iter, scope) << endl;
+      scope_up(f_service_);
+
+      f_service_ <<
+        endl <<
+        indent() << "if (mtype == apache::thrift::protocol::T_EXCEPTION) {" << endl <<
+        indent() << "  apache::thrift::TApplicationException x;" << endl <<
+        indent() << "  x.read(iprot.get());" << endl <<
+        indent() << "  iprot->readMessageEnd();" << endl <<
+        indent() << "  iprot->getTransport()->readEnd();" << endl <<
+        indent() << "  promise.errback(" << (*f_iter)->get_name() << "_failure(x));" << endl <<
+        indent() << "  return;" << endl <<
+        indent() << "}" << endl <<
+        indent() << "if (mtype != apache::thrift::protocol::T_REPLY) {" << endl <<
+        indent() << "  iprot->skip(apache::thrift::protocol::T_STRUCT);" << endl <<
+        indent() << "  iprot->readMessageEnd();" << endl <<
+        indent() << "  iprot->getTransport()->readEnd();" << endl <<
+        indent() << "  promise.errback(" << (*f_iter)->get_name() << "_failure(apache::thrift::TApplicationException(apache::thrift::TApplicationException::INVALID_MESSAGE_TYPE)));" << endl <<
+				indent() << "  return;" << endl <<
+        indent() << "}" << endl <<
+        indent() << "if (fname.compare(\"" << (*f_iter)->get_name() << "\") != 0) {" << endl <<
+        indent() << "  iprot->skip(apache::thrift::protocol::T_STRUCT);" << endl <<
+        indent() << "  iprot->readMessageEnd();" << endl <<
+        indent() << "  iprot->getTransport()->readEnd();" << endl <<
+        indent() << "  promise.errback(" << (*f_iter)->get_name() << "_failure(apache::thrift::TApplicationException(apache::thrift::TApplicationException::WRONG_METHOD_NAME)));" << endl <<
+				indent() << "  return;" << endl <<
+        indent() << "}" << endl;
+
+      if (!(*f_iter)->get_returntype()->is_void() &&
+          !is_complex_type((*f_iter)->get_returntype())) {
+        t_field returnfield((*f_iter)->get_returntype(), "_return");
+        f_service_ <<
+          indent() << declare_field(&returnfield) << endl;
+      }
+
+      f_service_ <<
+        indent() << resultname << " result;" << endl;
+
+      f_service_ <<
+        indent() << "result.read(iprot.get());" << endl <<
+        indent() << "iprot->readMessageEnd();" << endl <<
+        indent() << "iprot->getTransport()->readEnd();" << endl <<
+        endl;
+
+      // Careful, only look for _result if not a void function
+      if (!(*f_iter)->get_returntype()->is_void()) {
+				f_service_ <<
+					indent() << "if (result.__isset.success) {" << endl <<
+					indent() << "  promise.callback(result.success);" << endl <<
+					indent() << "  return;" << endl <<
+					indent() << "}" << endl;
+      }
+
+			// Handle failure
+			// FIXME: deprecated! failure is sent as exception
+			f_service_ <<
+				indent() << "if (result.__isset.failure) {" << endl <<
+				indent() << "  promise.errback(result);" << endl <<
+				indent() << "  return;" << endl <<
+				indent() << "}" << endl;
+
+			// Handle exception
+      t_struct* xs = (*f_iter)->get_xceptions();
+      const std::vector<t_field*>& xceptions = xs->get_members();
+      vector<t_field*>::const_iterator x_iter;
+      for (x_iter = xceptions.begin(); x_iter != xceptions.end(); ++x_iter) {
+        f_service_ <<
+          indent() << "if (result.__isset." << (*x_iter)->get_name() << ") {" << endl <<
+          indent() << "  promise.errback(result);" << endl <<
+          indent() << "  return;" << endl <<
+          indent() << "}" << endl;
+      }
+
+      // We only get here if we are a void function
+      if ((*f_iter)->get_returntype()->is_void()) {
+        indent(f_service_) << "promise.callback();" << endl;
+      } else {
+        f_service_ <<
+	  indent() << "  promise.errback(" << (*f_iter)->get_name() << "_failure(apache::thrift::TApplicationException(apache::thrift::TApplicationException::MISSING_RESULT, \"" << (*f_iter)->get_name() << " failed: unknown result\")));" <<
+	  indent() << "  return;" << endl;
+      }
+
+      // Close function
+      scope_down(f_service_);
+      f_service_ << endl;
+    }
+  }
+  indent(f_service_) << "bool " << scope << "process(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, void* connectionContext)" << endl;
+  scope_up(f_service_);
+	f_service_ <<
+		indent() << "std::string fname;" << endl <<
+		indent() << "apache::thrift::protocol::TMessageType mtype;" << endl <<
+		indent() << "int32_t rseqid;" << endl <<
+		endl <<
+		indent() << "piprot->readMessageBegin(fname, mtype, rseqid);" << endl <<
+	        indent() << "apache::thrift::concurrency::Guard g(mutex_);" << endl <<
+		indent() << "request_map_t::iterator it = requests_.find(rseqid);" << endl <<
+		indent() << "if (it == requests_.end()) return false;" << endl <<
+	        indent() << "it->second(piprot, fname, mtype); /* Invoke user method */" << endl <<
+		indent() << "requests_.erase(it);" << endl <<
+		indent() << "return true;" << endl;
+
+  scope_down(f_service_);
 }
 
 /**
@@ -3107,6 +3567,177 @@ void t_cpp_generator::generate_service_processor(t_service* tservice,
 }
 
 /**
+ * Generates a service server definition.
+ *
+ * @param tservice The service to generate a server for.
+ */
+void t_cpp_generator::generate_async_processor(t_service* tservice) {
+  // Generate the dispatch methods
+  vector<t_function*> functions = tservice->get_functions();
+  vector<t_function*>::iterator f_iter;
+
+  string extends = "";
+  string extends_processor = "";
+  if (tservice->get_extends() != NULL) {
+    extends = type_name(tservice->get_extends());
+    extends_processor = ", public " + extends + "AsyncProcessor";
+  }
+
+  // Generate the header portion
+  f_header_ <<
+    "class " << service_name_ << "AsyncProcessor : " <<
+    "virtual public apache::thrift::TProcessor" <<
+    extends_processor << " {" << endl;
+
+  // Protected data members
+  f_header_ <<
+    " protected:" << endl;
+  indent_up();
+  f_header_ <<
+    indent() << "boost::shared_ptr<" << service_name_ << "AsyncIf> iface_;" << endl;
+  f_header_ <<
+		  indent() << "virtual bool process_fn(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, std::string& fname, int32_t seqid);" << endl;
+
+  indent_down();
+
+  // Process function declarations
+  f_header_ <<
+    " private:" << endl;
+  indent_up();
+  f_header_ <<
+    indent() << "std::map<std::string, void (" << service_name_ << "AsyncProcessor::*)(int32_t, boost::shared_ptr<apache::thrift::protocol::TProtocol>, boost::shared_ptr<apache::thrift::protocol::TProtocol>)> processMap_;" << endl;
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    indent(f_header_) <<
+      "void process_" << (*f_iter)->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot);" << endl;
+		if (!(*f_iter)->is_oneway()) {
+			if (!(*f_iter)->get_returntype()->is_void()) {
+				indent(f_header_) <<
+					"void success_" << (*f_iter)->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, " << type_name((*f_iter)->get_returntype()) << " value);" << endl;
+			}
+			else {
+				indent(f_header_) <<
+					"void success_" << (*f_iter)->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot);" << endl;
+			}
+			indent(f_header_) <<
+				"void reply_" << (*f_iter)->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, " << service_name_ << "_" << (*f_iter)->get_name() << "_result result);" << endl;
+		}
+	}
+  indent_down();
+
+  indent_up();
+  string declare_map = "";
+  indent_up();
+
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    declare_map += indent();
+    declare_map += "processMap_[\"";
+    declare_map += (*f_iter)->get_name();
+    declare_map += "\"] = &";
+    declare_map += service_name_;
+    declare_map += "AsyncProcessor::process_";
+    declare_map += (*f_iter)->get_name();
+    declare_map += ";\n";
+  }
+  indent_down();
+
+  f_header_ <<
+    " public:" << endl <<
+		// Constructor
+    indent() << service_name_ << "AsyncProcessor(boost::shared_ptr<" << service_name_ << "AsyncIf> iface) :" << endl;
+  if (extends.empty()) {
+    f_header_ <<
+      indent() << "  iface_(iface) {" << endl;
+  } else {
+    f_header_ <<
+      indent() << "  " << extends << "AsyncProcessor(iface)," << endl <<
+      indent() << "  iface_(iface) {" << endl;
+  }
+  f_header_ <<
+    declare_map <<
+    indent() << "}" << endl <<
+    endl <<
+    indent() << "virtual bool process(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, void* connectionContext);" << endl <<
+    indent() << "virtual ~" << service_name_ << "AsyncProcessor() {}" << endl;
+  indent_down();
+  f_header_ <<
+    "};" << endl << endl;
+
+  // Generate the server implementation
+  f_service_ <<
+    "bool " << service_name_ << "AsyncProcessor::process(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, void* connectionContext) {" << endl;
+  indent_up();
+
+  f_service_ <<
+    endl <<
+    indent() << "std::string fname;" << endl <<
+    indent() << "apache::thrift::protocol::TMessageType mtype;" << endl <<
+    indent() << "int32_t seqid;" << endl <<
+    endl <<
+    indent() << "piprot->readMessageBegin(fname, mtype, seqid);" << endl <<
+    endl <<
+    indent() << "if (mtype != apache::thrift::protocol::T_CALL && mtype != apache::thrift::protocol::T_ONEWAY) {" << endl <<
+    indent() << "  piprot->skip(apache::thrift::protocol::T_STRUCT);" << endl <<
+    indent() << "  piprot->readMessageEnd();" << endl <<
+    indent() << "  piprot->getTransport()->readEnd();" << endl <<
+    indent() << "  apache::thrift::TApplicationException x(apache::thrift::TApplicationException::INVALID_MESSAGE_TYPE);" << endl <<
+    indent() << "  poprot->writeMessageBegin(fname, apache::thrift::protocol::T_EXCEPTION, seqid);" << endl <<
+    indent() << "  x.write(poprot.get());" << endl <<
+    indent() << "  poprot->writeMessageEnd();" << endl <<
+    indent() << "  poprot->getTransport()->flush();" << endl <<
+    indent() << "  poprot->getTransport()->writeEnd();" << endl <<
+    indent() << "  return true;" << endl <<
+    indent() << "}" << endl <<
+    endl <<
+    indent() << "return process_fn(piprot, poprot, fname, seqid);" <<
+    endl;
+
+  indent_down();
+  f_service_ <<
+    indent() << "}" << endl <<
+    endl;
+
+  f_service_ <<
+    "bool " << service_name_ << "AsyncProcessor::process_fn(boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, std::string& fname, int32_t seqid) {" << endl;
+  indent_up();
+
+  // HOT: member function pointer map
+  f_service_ <<
+    indent() << "std::map<std::string, void (" << service_name_ << "AsyncProcessor::*)(int32_t, boost::shared_ptr<apache::thrift::protocol::TProtocol>, boost::shared_ptr<apache::thrift::protocol::TProtocol>)>::iterator pfn;" << endl <<
+    indent() << "pfn = processMap_.find(fname);" << endl <<
+    indent() << "if (pfn == processMap_.end()) {" << endl;
+  if (extends.empty()) {
+    f_service_ <<
+      indent() << "  piprot->skip(apache::thrift::protocol::T_STRUCT);" << endl <<
+      indent() << "  piprot->readMessageEnd();" << endl <<
+      indent() << "  piprot->getTransport()->readEnd();" << endl <<
+      indent() << "  apache::thrift::TApplicationException x(apache::thrift::TApplicationException::UNKNOWN_METHOD, \"Invalid method name: '\"+fname+\"'\");" << endl <<
+      indent() << "  poprot->writeMessageBegin(fname, apache::thrift::protocol::T_EXCEPTION, seqid);" << endl <<
+      indent() << "  x.write(poprot.get());" << endl <<
+      indent() << "  poprot->writeMessageEnd();" << endl <<
+      indent() << "  poprot->getTransport()->flush();" << endl <<
+      indent() << "  poprot->getTransport()->writeEnd();" << endl <<
+      indent() << "  return true;" << endl;
+  } else {
+    f_service_ <<
+      indent() << "  return " << extends << "AsyncProcessor::process_fn(piprot, poprot, fname, seqid);" << endl;
+  }
+  f_service_ <<
+    indent() << "}" << endl <<
+    indent() << "(this->*(pfn->second))(seqid, piprot, poprot);" << endl <<
+    indent() << "return true;" << endl;
+
+  indent_down();
+  f_service_ <<
+    "}" << endl <<
+    endl;
+
+  // Generate the process subfunctions
+  for (f_iter = functions.begin(); f_iter != functions.end(); ++f_iter) {
+    generate_async_process_function(tservice, *f_iter);
+  }
+}
+
+/**
  * Generates a struct and helpers for a function.
  *
  * @param tfunction The function
@@ -3125,6 +3756,12 @@ void t_cpp_generator::generate_function_helpers(t_service* tservice,
     result.append(&success);
   }
 
+	t_struct exc(NULL, "apache::thrift::TApplicationException");
+  t_field failure(&exc, "failure", -1337); // FIXME: failure field id
+	if (gen_async_) {
+		result.append(&failure);
+	}
+
   t_struct* xs = tfunction->get_xceptions();
   const vector<t_field*>& fields = xs->get_members();
   vector<t_field*>::const_iterator f_iter;
@@ -3132,7 +3769,7 @@ void t_cpp_generator::generate_function_helpers(t_service* tservice,
     result.append(*f_iter);
   }
 
-  generate_struct_definition(f_header_, &result, false);
+  generate_struct_definition(f_header_, &result, false, false, true, true, false, gen_async_); //if typedefs is true -> compilation error in tests
   generate_struct_reader(out, &result);
   generate_struct_result_writer(out, &result);
 
@@ -3682,6 +4319,129 @@ void t_cpp_generator::generate_process_function(t_service* tservice,
       out << endl;
     } // for each function
   } // cob style
+}
+
+/**
+ * Generates async process function definitions.
+ *
+ * @param tfunction The function to write a dispatcher for
+ */
+void t_cpp_generator::generate_async_process_function(t_service* tservice,
+																												 t_function* tfunction) {
+  // Open function
+  f_service_ <<
+    "void " << tservice->get_name() << "AsyncProcessor::" <<
+    "process_" << tfunction->get_name() <<
+    "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> piprot, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot)" << endl;
+  scope_up(f_service_);
+
+  string argsname = tservice->get_name() + "_" + tfunction->get_name() + "_args";
+  string resultname = tservice->get_name() + "_" + tfunction->get_name() + "_result";
+  string sharedfuturename = tservice->get_name() + "AsyncIf::" + tfunction->get_name() + "_shared_future_t";
+
+  f_service_ <<
+    indent() << argsname << " args;" << endl <<
+    indent() << "args.read(piprot.get());" << endl <<
+    indent() << "piprot->readMessageEnd();" << endl <<
+    indent() << "piprot->getTransport()->readEnd();" << endl <<
+    endl;
+
+  //t_struct* xs = tfunction->get_xceptions();
+  //const std::vector<t_field*>& xceptions = xs->get_members();
+  //vector<t_field*>::const_iterator x_iter;
+
+  // Generate the function call
+  t_struct* arg_struct = tfunction->get_arglist();
+  const std::vector<t_field*>& fields = arg_struct->get_members();
+  vector<t_field*>::const_iterator f_iter;
+
+  if (!tfunction->is_oneway()) {
+    f_service_ << indent() << sharedfuturename << " future = ";
+  } else {
+    f_service_ << indent();
+  }
+
+  bool first = true;
+  f_service_ <<
+    "iface_->" << tfunction->get_name() << "(";
+
+  for (f_iter = fields.begin(); f_iter != fields.end(); ++f_iter) {
+    if (first) {
+      first = false;
+    } else {
+      f_service_ << ", ";
+    }
+    f_service_ << "args." << (*f_iter)->get_name();
+  }
+  f_service_ << ");" << endl;
+
+  // Callbacks
+  if (!tfunction->is_oneway()) {
+    if (!tfunction->get_returntype()->is_void()) {
+      f_service_ <<
+	indent() << "future.setCallback(boost::bind(&" << tservice->get_name() << "AsyncProcessor::success_" << tfunction->get_name() << ", this, seqid, poprot, _1));" << endl;
+    }
+    else {
+      f_service_ <<
+	indent() << "future.setCallback(boost::bind(&" << tservice->get_name() << "AsyncProcessor::success_" << tfunction->get_name() << ", this, seqid, poprot));" << endl;
+    }
+    f_service_ <<
+      indent() << "future.setErrback(boost::bind(&" << tservice->get_name() << "AsyncProcessor::reply_" << tfunction->get_name() << ", this, seqid, poprot, _1));" << endl;
+  }
+
+	scope_down(f_service_);
+	f_service_ << endl;
+
+  if (!tfunction->is_oneway()) {
+		// Success implementation
+		if (!tfunction->get_returntype()->is_void()) {
+			indent(f_service_) <<
+				"void " << tservice->get_name() << "AsyncProcessor::success_" << tfunction->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, " << type_name(tfunction->get_returntype()) << " value)" << endl;
+		}
+		else {
+			indent(f_service_) <<
+				"void " << tservice->get_name() << "AsyncProcessor::success_" << tfunction->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot)" << endl;
+		}
+		scope_up(f_service_);
+		indent(f_service_) << resultname << " result;" << endl;
+		// Set isset on success field
+		if (!tfunction->get_returntype()->is_void()) {
+			indent(f_service_) << "result.success = value;" << endl;
+			indent(f_service_) << "result.__isset.success = true;" << endl;
+		}
+		indent(f_service_) << "reply_" << tfunction->get_name() << "(seqid, poprot, result);" << endl;
+		scope_down(f_service_);
+		f_service_ << endl;
+
+		// Reply implementation
+		indent(f_service_) <<
+      "void " << tservice->get_name() << "AsyncProcessor::reply_" << tfunction->get_name() << "(int32_t seqid, boost::shared_ptr<apache::thrift::protocol::TProtocol> poprot, " << resultname << " result)" << endl;
+		scope_up(f_service_);
+
+		// Send failure tapplication exception
+    f_service_ <<
+      indent() << "if (result.__isset.failure) {" << endl <<
+      indent() << "  poprot->writeMessageBegin(\"" << tfunction->get_name() << "\", apache::thrift::protocol::T_EXCEPTION, seqid);" << endl <<
+      indent() << "  result.failure.write(poprot.get());" << endl <<
+      indent() << "  poprot->writeMessageEnd();" << endl <<
+      indent() << "  poprot->getTransport()->flush();" << endl <<
+      indent() << "  poprot->getTransport()->writeEnd();" << endl <<
+      indent() << "  return;" << endl <<
+			indent() << "}" << endl;
+
+		// Serialize the result into a struct
+		f_service_ <<
+			endl <<
+			indent() << "poprot->writeMessageBegin(\"" << tfunction->get_name() << "\", apache::thrift::protocol::T_REPLY, seqid);" << endl <<
+			indent() << "result.write(poprot.get());" << endl <<
+			indent() << "poprot->writeMessageEnd();" << endl <<
+			indent() << "poprot->getTransport()->flush();" << endl <<
+			indent() << "poprot->getTransport()->writeEnd();" << endl;
+
+		// Close function
+		scope_down(f_service_);
+		f_service_ << endl;
+	}
 }
 
 /**
@@ -4457,6 +5217,39 @@ string t_cpp_generator::function_signature(t_function* tfunction,
 }
 
 /**
+ * Renders a function signature of the form 'type name(args, callback)'
+ *
+ * @param tfunction Function definition
+ * @return String of rendered function definition
+ */
+string t_cpp_generator::async_function_signature(t_service* tservice,
+						 t_function* tfunction,
+						 string method_prefix,
+						 string return_prefix,
+						 bool name_params) {
+  t_struct* arglist = tfunction->get_arglist();
+
+  return
+    // Return type
+    (tfunction->is_oneway() ? "void " :
+     return_prefix + tfunction->get_name() + "_shared_future_t ") +
+    // Function name
+    method_prefix + tfunction->get_name() +
+    // Args
+    "(" + argument_list(arglist, name_params) + ")";
+}
+
+string t_cpp_generator::async_recv_signature(t_service* tservice,
+					     t_function* tfunction,
+					     string prefix,
+					     bool name_params) {
+  //  t_type* ttype = tfunction->get_returntype();
+
+  return "void " + prefix + "recv_" + tfunction->get_name() + "(boost::shared_ptr<apache::thrift::protocol::TProtocol> iprot, std::string fname, apache::thrift::protocol::TMessageType mtype, " + tfunction->get_name() + "_shared_promise_t promise)";
+}
+
+
+/**
  * Renders a field list
  *
  * @param tstruct The struct definition
@@ -4594,5 +5387,6 @@ THRIFT_REGISTER_GENERATOR(cpp, "C++",
 "    pure_enums:      Generate pure enums instead of wrapper classes.\n"
 "    dense:           Generate type specifications for the dense protocol.\n"
 "    include_prefix:  Use full include paths in generated files.\n"
+"    async:           Generate code for asynchronous callbacks.\n"
 )
 

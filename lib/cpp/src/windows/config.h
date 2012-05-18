@@ -81,8 +81,6 @@ inline int sleep(DWORD ms)
 #if WINVER <= 0x0502 //XP, Server2003
 #define POLLIN  0x0300
 #define POLLOUT 0x0010
-#define poll(fds, nfds, timeout) \
-    poll_win32(fds, nfds, timeout)
 
 typedef struct pollfd {
   SOCKET  fd;
@@ -90,7 +88,7 @@ typedef struct pollfd {
   SHORT   revents;
 } WSAPOLLFD, *PWSAPOLLFD, FAR *LPWSAPOLLFD;
 
-inline int poll_win32(LPWSAPOLLFD fdArray, ULONG nfds, INT timeout)
+inline int poll(LPWSAPOLLFD fdArray, ULONG nfds, INT timeout)
 {
   fd_set read_fds, write_fds;
   fd_set* read_fds_ptr  = NULL;

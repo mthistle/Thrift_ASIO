@@ -133,6 +133,7 @@ if test "$with_cpp" = "yes";  then
   fi
 fi
 AM_CONDITIONAL([WITH_CPP], [test "$have_cpp" = "yes"])
+AM_CONDITIONAL([AMX_HAVE_BOOST], [test "$succeeded" = "yes"])
 AM_CONDITIONAL([AMX_HAVE_LIBEVENT], [test "$have_libevent" = "yes"])
 AM_CONDITIONAL([AMX_HAVE_ZLIB], [test "$have_zlib" = "yes"])
 AM_CONDITIONAL([AMX_HAVE_QT], [test "$have_qt" = "yes"])
@@ -581,6 +582,7 @@ AC_CONFIG_FILES([
   lib/cpp/thrift-z.pc
   lib/cpp/thrift-qt.pc
   lib/cpp/thrift.pc
+  lib/cpp/thrift-asio.pc
   lib/c_glib/Makefile
   lib/c_glib/thrift_c_glib.pc
   lib/c_glib/test/Makefile

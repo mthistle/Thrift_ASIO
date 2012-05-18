@@ -34,6 +34,10 @@ libthrift_la_LDFLAGS = -release $(VERSION) $(BOOST_LDFLAGS)
 
 ## We only build the extra libraries if we have the dependencies,
 ## but we install all of the headers unconditionally.
+if AMX_HAVE_BOOST
+lib_LTLIBRARIES += libthriftasio.la
+pkgconfig_DATA += thrift-asio.pc
+endif
 if AMX_HAVE_LIBEVENT
 lib_LTLIBRARIES += libthriftnb.la
 pkgconfig_DATA += thrift-nb.pc
@@ -94,6 +98,8 @@ libthrift_la_SOURCES += src/concurrency/Mutex.cpp \
                         src/concurrency/PosixThreadFactory.cpp
 endif
 
+libthriftasio_la_SOURCES = src/async/TAsioAsync.cpp
+
 libthriftnb_la_SOURCES = src/server/TNonblockingServer.cpp \
                          src/async/TAsyncProtocolProcessor.cpp \
                          src/async/TEvhttpServer.cpp \
@@ -108,6 +114,7 @@ libthriftqt_la_SOURCES = $(libthriftqt_la_MOC) \
 CLEANFILES = $(libthriftqt_la_MOC)
 
 # Flags for the various libraries
+libthriftasio_la_CPPFLAGS = $(AM_CPPFLAGS) $(BOOST_CPPFLAGS)
 libthriftnb_la_CPPFLAGS = $(AM_CPPFLAGS) $(LIBEVENT_CPPFLAGS)
 libthriftz_la_CPPFLAGS  = $(AM_CPPFLAGS) $(ZLIB_CPPFLAGS)
 libthriftqt_la_CPPFLAGS = $(AM_CPPFLAGS) $(QT_CFLAGS)
@@ -200,7 +207,9 @@ include_async_HEADERS = \
                      src/async/TAsyncBufferProcessor.h \
                      src/async/TAsyncProtocolProcessor.h \
                      src/async/TEvhttpClientChannel.h \
-                     src/async/TEvhttpServer.h
+                     src/async/TEvhttpServer.h \
+                     src/async/TAsioAsync.h \
+                     src/async/TAsync.h
 
 include_qtdir = $(include_thriftdir)/qt
 include_qt_HEADERS = \
@@ -230,6 +239,7 @@ WINDOWS_DIST = \
 EXTRA_DIST = \
              README \
              README.SSL \
+             thrift-asio.pc.in \
              thrift-nb.pc.in \
              thrift.pc.in \
              thrift-z.pc.in \

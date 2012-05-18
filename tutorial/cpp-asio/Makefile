@@ -17,21 +17,24 @@
 # under the License.
 #
 
-BOOST_DIR = /usr/local/boost/include/boost-1_33_1/
-THRIFT_DIR = /usr/local/include/thrift
-LIB_DIR = /usr/local/lib
-
-GEN_SRC = ../gen-cpp/SharedService.cpp ../gen-cpp/shared_types.cpp ../gen-cpp/tutorial_types.cpp ../gen-cpp/Calculator.cpp
+BOOST_DIR = /usr/local/boost_1_49_0/boost/
+THRIFT_DIR = /Users/mthistle/git/rialto/ossbuilds/include/thrift
+LIB_DIR = /Users/mthistle/git/rialto/ossbuilds/lib/
 
 DEFINES = -DHAVE_INTTYPES_H -DHAVE_NETINET_IN_H
 
-default: server client
+GEN_SRC = ../gen-cpp/SharedService.cpp ../gen-cpp/shared_types.cpp ../gen-cpp/tutorial_types.cpp ../gen-cpp/Calculator.cpp
+
+default: server client classClient
 
 server: CppServer.cpp
-	g++ -o CppServer -I${THRIFT_DIR} -I${BOOST_DIR}  -I../gen-cpp -L${LIB_DIR} ${DEFINES} CppServer.cpp ${GEN_SRC} -lthrift
+	g++ -o CppServer -I${THRIFT_DIR} -I${BOOST_DIR}  -I../gen-cpp -L${LIB_DIR}  ${DEFINES}  CppServer.cpp ${GEN_SRC} -lthrift -lthriftasio -lboost_system
 
 client: CppClient.cpp
-	g++ -o CppClient -I${THRIFT_DIR} -I${BOOST_DIR}  -I../gen-cpp -L${LIB_DIR} ${DEFINES} -lthrift CppClient.cpp ${GEN_SRC} -lthrift
+	g++ -o CppClient -I${THRIFT_DIR} -I${BOOST_DIR}  -I../gen-cpp -L${LIB_DIR}  ${DEFINES}  CppClient.cpp ${GEN_SRC} -lthrift -lthriftasio -lboost_system
+
+classClient: ClassCppClient.cpp
+	/opt/local/bin/g++-mp-4.6 -o classClient -I${THRIFT_DIR} -I${BOOST_DIR}  -I../gen-cpp -L${LIB_DIR}  ${DEFINES}  ClassCppClient.cpp ${GEN_SRC} -lthrift -lthriftasio -lboost_system
 
 clean:
-	$(RM) -r CppClient CppServer
+	$(RM) -r CppClient CppServer classCppClient
