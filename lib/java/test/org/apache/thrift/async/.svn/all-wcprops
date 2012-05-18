@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/async
+END
+TestTAsyncClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/async/TestTAsyncClient.java
+END
+TestTAsyncClientManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/async/TestTAsyncClientManager.java
+END

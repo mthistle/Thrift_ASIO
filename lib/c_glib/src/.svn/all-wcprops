@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1153412/thrift/trunk/lib/c_glib/src
+END
+thrift.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/thrift.c
+END
+thrift_application_exception.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/thrift_application_exception.c
+END
+thrift_struct.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/thrift_struct.c
+END
+thrift.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/thrift.h
+END
+thrift_application_exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1153412/thrift/trunk/lib/c_glib/src/thrift_application_exception.h
+END
+thrift_struct.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/thrift_struct.h
+END

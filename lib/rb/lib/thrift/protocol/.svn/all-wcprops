@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1238144/thrift/trunk/lib/rb/lib/thrift/protocol
+END
+binary_protocol_accelerated.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/protocol/binary_protocol_accelerated.rb
+END
+binary_protocol.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/lib/thrift/protocol/binary_protocol.rb
+END
+compact_protocol.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/lib/thrift/protocol/compact_protocol.rb
+END
+json_protocol.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1238144/thrift/trunk/lib/rb/lib/thrift/protocol/json_protocol.rb
+END
+base_protocol.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/protocol/base_protocol.rb
+END

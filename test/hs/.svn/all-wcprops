@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1137858/thrift/trunk/test/hs
+END
+DebugProtoTest_Main.hs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/hs/DebugProtoTest_Main.hs
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/hs/Makefile.am
+END
+ThriftTestUtils.hs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/hs/ThriftTestUtils.hs
+END
+run-test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1072440/thrift/trunk/test/hs/run-test.sh
+END
+ThriftTest_Main.hs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1137858/thrift/trunk/test/hs/ThriftTest_Main.hs
+END
+ConstantsDemo_Main.hs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/hs/ConstantsDemo_Main.hs
+END

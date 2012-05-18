@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1291039/thrift/trunk/lib/csharp/src/Transport
+END
+TSocket.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1068470/thrift/trunk/lib/csharp/src/Transport/TSocket.cs
+END
+TStreamTransport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Transport/TStreamTransport.cs
+END
+TFramedTransport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1063966/thrift/trunk/lib/csharp/src/Transport/TFramedTransport.cs
+END
+TTransportException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Transport/TTransportException.cs
+END
+TTransport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1291039/thrift/trunk/lib/csharp/src/Transport/TTransport.cs
+END
+THttpHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1164723/thrift/trunk/lib/csharp/src/Transport/THttpHandler.cs
+END
+THttpClient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1212223/thrift/trunk/lib/csharp/src/Transport/THttpClient.cs
+END
+TBufferedTransport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Transport/TBufferedTransport.cs
+END
+TServerSocket.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1068470/thrift/trunk/lib/csharp/src/Transport/TServerSocket.cs
+END
+TServerTransport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Transport/TServerTransport.cs
+END
+TTransportFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Transport/TTransportFactory.cs
+END

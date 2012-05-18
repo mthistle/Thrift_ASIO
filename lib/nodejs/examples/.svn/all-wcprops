@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1230797/thrift/trunk/lib/nodejs/examples
+END
+client_multitransport.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1090565/thrift/trunk/lib/nodejs/examples/client_multitransport.js
+END
+server.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1230797/thrift/trunk/lib/nodejs/examples/server.js
+END
+server_multitransport.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1230797/thrift/trunk/lib/nodejs/examples/server_multitransport.js
+END
+client.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1056613/thrift/trunk/lib/nodejs/examples/client.js
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1056613/thrift/trunk/lib/nodejs/examples/README.md
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1230797/thrift/trunk/lib/nodejs/examples/Makefile
+END
+user.thrift
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1056613/thrift/trunk/lib/nodejs/examples/user.thrift
+END

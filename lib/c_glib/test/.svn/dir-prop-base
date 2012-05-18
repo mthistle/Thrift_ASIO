@@ -1,0 +1,28 @@
+K 10
+svn:ignore
+V 327
+*.o
+*.lo
+testwrapper.sh
+testwrapper-test*
+.deps
+.libs
+gen-cpp
+gen-c_glib
+testsimpleserver
+Makefile.in
+testthrifttestclient
+testthrifttest
+Makefile
+testoptionalrequired
+testtransportsocket
+test-wrapper.sh
+teststruct
+testmemorybuffer
+testframedtransport
+testbufferedtransport
+testprotocolbinary
+testdebugproto
+testbinaryprotocol
+
+END

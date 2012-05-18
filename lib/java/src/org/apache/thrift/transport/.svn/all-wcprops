@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1296053/thrift/trunk/lib/java/src/org/apache/thrift/transport
+END
+TFramedTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1156731/thrift/trunk/lib/java/src/org/apache/thrift/transport/TFramedTransport.java
+END
+TSeekableFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSeekableFile.java
+END
+TTransportException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TTransportException.java
+END
+TNonblockingSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TNonblockingSocket.java
+END
+AutoExpandingBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/AutoExpandingBuffer.java
+END
+THttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1160941/thrift/trunk/lib/java/src/org/apache/thrift/transport/THttpClient.java
+END
+TSaslClientTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSaslClientTransport.java
+END
+TFileProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/transport/TFileProcessor.java
+END
+TSaslTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1077939/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSaslTransport.java
+END
+TServerSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1077939/thrift/trunk/lib/java/src/org/apache/thrift/transport/TServerSocket.java
+END
+TNonblockingTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TNonblockingTransport.java
+END
+TServerTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TServerTransport.java
+END
+TTransportFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TTransportFactory.java
+END
+AutoExpandingBufferReadTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/AutoExpandingBufferReadTransport.java
+END
+TSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1176472/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSocket.java
+END
+TFastFramedTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1156731/thrift/trunk/lib/java/src/org/apache/thrift/transport/TFastFramedTransport.java
+END
+TFileTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/transport/TFileTransport.java
+END
+TTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/transport/TTransport.java
+END
+TIOStreamTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TIOStreamTransport.java
+END
+TStandardFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TStandardFile.java
+END
+TMemoryBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1077939/thrift/trunk/lib/java/src/org/apache/thrift/transport/TMemoryBuffer.java
+END
+TNonblockingServerSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1077939/thrift/trunk/lib/java/src/org/apache/thrift/transport/TNonblockingServerSocket.java
+END
+AutoExpandingBufferWriteTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/AutoExpandingBufferWriteTransport.java
+END
+TMemoryInputTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1063820/thrift/trunk/lib/java/src/org/apache/thrift/transport/TMemoryInputTransport.java
+END
+TSSLTransportFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1296053/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSSLTransportFactory.java
+END
+TSaslServerTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1222397/thrift/trunk/lib/java/src/org/apache/thrift/transport/TSaslServerTransport.java
+END
+TNonblockingServerTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/transport/TNonblockingServerTransport.java
+END

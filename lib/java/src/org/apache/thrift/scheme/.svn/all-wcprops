@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1156728/thrift/trunk/lib/java/src/org/apache/thrift/scheme
+END
+StandardScheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1156728/thrift/trunk/lib/java/src/org/apache/thrift/scheme/StandardScheme.java
+END
+SchemeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1156728/thrift/trunk/lib/java/src/org/apache/thrift/scheme/SchemeFactory.java
+END
+IScheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1156728/thrift/trunk/lib/java/src/org/apache/thrift/scheme/IScheme.java
+END
+TupleScheme.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1156728/thrift/trunk/lib/java/src/org/apache/thrift/scheme/TupleScheme.java
+END

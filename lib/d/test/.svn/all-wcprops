@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test
+END
+thrift_test_client.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/thrift_test_client.d
+END
+test_utils.d
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/test_utils.d
+END
+thrift_test_runner.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/thrift_test_runner.sh
+END
+openssl.test.cnf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/openssl.test.cnf
+END
+thrift_test_server.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/thrift_test_server.d
+END
+client_pool_test.d
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/client_pool_test.d
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/Makefile.am
+END
+serialization_benchmark.d
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/serialization_benchmark.d
+END
+thrift_test_common.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/thrift_test_common.d
+END
+stress_test_server.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/stress_test_server.d
+END
+transport_test.d
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/transport_test.d
+END
+async_test.d
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/async_test.d
+END
+async_test_runner.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/test/async_test_runner.sh
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1236972/thrift/trunk/lib/php
+END
+thrift_protocol.ini
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/thrift_protocol.ini
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1235403/thrift/trunk/lib/php/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/README
+END
+README.apache
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/README.apache
+END

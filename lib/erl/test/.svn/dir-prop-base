@@ -1,0 +1,30 @@
+K 10
+svn:ignore
+V 374
+secondService_*
+aService_*
+serviceForExceptionWithAMap_*
+annotationTest_*
+service_*
+constantsDemo_*
+smallService_*
+smallTest_*
+debugProtoTest_*
+srv_*
+denseLinkingTest_*
+stressTest_*
+docTest_*
+emptyService_*
+inherited_*
+javaBeansTest_*
+thrift1151_*
+javaBeansTest_*
+manyTypedefs_*
+thriftTest_*
+optionalRequiredTest_*
+yowza_*
+reverseOrderService_*
+thrift1475_*
+manyOptionals_*
+
+END

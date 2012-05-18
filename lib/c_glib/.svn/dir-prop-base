@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 95
+*.gcda
+*.gcno
+*.la
+*.lo
+*.loT
+*.o
+.deps
+.libs
+Makefile.in
+Makefile
+thriftc.pc
+thrift_c_glib.pc
+
+END

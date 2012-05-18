@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1303637/thrift/trunk/lib/delphi/src
+END
+Thrift.Collections.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/src/Thrift.Collections.pas
+END
+Thrift.Utils.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1185688/thrift/trunk/lib/delphi/src/Thrift.Utils.pas
+END
+Thrift.Protocol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1303637/thrift/trunk/lib/delphi/src/Thrift.Protocol.pas
+END
+Thrift.pas
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/src/Thrift.pas
+END
+Thrift.Console.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1185688/thrift/trunk/lib/delphi/src/Thrift.Console.pas
+END
+Thrift.Server.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/src/Thrift.Server.pas
+END
+Thrift.Protocol.JSON.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/src/Thrift.Protocol.JSON.pas
+END
+Thrift.Stream.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/src/Thrift.Stream.pas
+END
+Thrift.Transport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1303637/thrift/trunk/lib/delphi/src/Thrift.Transport.pas
+END

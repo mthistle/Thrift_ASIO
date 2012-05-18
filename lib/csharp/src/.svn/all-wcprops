@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1292148/thrift/trunk/lib/csharp/src
+END
+Thrift.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1091921/thrift/trunk/lib/csharp/src/Thrift.csproj
+END
+TProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/TProcessor.cs
+END
+TApplicationException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1090392/thrift/trunk/lib/csharp/src/TApplicationException.cs
+END
+Thrift.WP7.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1211880/thrift/trunk/lib/csharp/src/Thrift.WP7.csproj
+END
+Thrift.sln
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Thrift.sln
+END

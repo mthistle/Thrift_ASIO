@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1303672/thrift/trunk/lib/erl
+END
+rebar.config
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1172199/thrift/trunk/lib/erl/rebar.config
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1303663/thrift/trunk/lib/erl/Makefile.am
+END
+rebar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/rebar
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1172199/thrift/trunk/lib/erl/README
+END

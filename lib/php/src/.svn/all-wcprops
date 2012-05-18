@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1236972/thrift/trunk/lib/php/src
+END
+TStringUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/TStringUtils.php
+END
+Thrift.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/Thrift.php
+END
+autoload.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/autoload.php
+END

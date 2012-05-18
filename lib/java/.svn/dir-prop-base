@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 89
+gen-java
+gen-javabean
+build
+*.jar 
+Makefile
+Makefile.in
+libthrift.jar
+libthrift-test.jar
+
+END

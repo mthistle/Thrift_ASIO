@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 89
+StressTest
+StressTestNonBlocking
+TestServer
+TestClient
+gen-*
+Makefile.in
+Makefile
+.deps
+
+
+END

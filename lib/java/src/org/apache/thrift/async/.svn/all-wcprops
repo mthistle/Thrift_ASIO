@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/async
+END
+TAsyncClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/async/TAsyncClient.java
+END
+TAsyncClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/async/TAsyncClientFactory.java
+END
+AsyncMethodCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/async/AsyncMethodCallback.java
+END
+TAsyncClientManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1064911/thrift/trunk/lib/java/src/org/apache/thrift/async/TAsyncClientManager.java
+END
+TAsyncMethodCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/async/TAsyncMethodCall.java
+END

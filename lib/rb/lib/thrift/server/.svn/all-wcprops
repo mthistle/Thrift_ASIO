@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1133593/thrift/trunk/lib/rb/lib/thrift/server
+END
+simple_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/server/simple_server.rb
+END
+base_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/server/base_server.rb
+END
+thread_pool_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/server/thread_pool_server.rb
+END
+threaded_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/server/threaded_server.rb
+END
+mongrel_http_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/server/mongrel_http_server.rb
+END
+nonblocking_server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1133593/thrift/trunk/lib/rb/lib/thrift/server/nonblocking_server.rb
+END

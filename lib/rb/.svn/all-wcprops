@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1294917/thrift/trunk/lib/rb
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1174896/thrift/trunk/lib/rb/Rakefile
+END
+thrift.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/rb/thrift.gemspec
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/CHANGELOG
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1163341/thrift/trunk/lib/rb/Gemfile
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1174393/thrift/trunk/lib/rb/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1029964/thrift/trunk/lib/rb/README
+END

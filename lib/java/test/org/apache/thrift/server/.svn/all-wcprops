@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/server
+END
+ServerTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/server/ServerTestBase.java
+END
+TestThreadedSelectorServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1158977/thrift/trunk/lib/java/test/org/apache/thrift/server/TestThreadedSelectorServer.java
+END
+TestHsHaServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/server/TestHsHaServer.java
+END
+TestNonblockingServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/server/TestNonblockingServer.java
+END

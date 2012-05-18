@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data
+END
+FieldValueMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/FieldValueMetaData.java
+END
+FieldMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/FieldMetaData.java
+END
+EnumMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/EnumMetaData.java
+END
+StructMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/StructMetaData.java
+END
+ListMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/ListMetaData.java
+END
+SetMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/SetMetaData.java
+END
+MapMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/meta_data/MapMetaData.java
+END

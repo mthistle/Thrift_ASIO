@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1172901/thrift/trunk/lib/go/thrift
+END
+tnonblocking_server.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tnonblocking_server.go
+END
+tjson_protocol_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tjson_protocol_test.go
+END
+tjson_protocol.go
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tjson_protocol.go
+END
+tset.go
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tset.go
+END
+texception_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/texception_test.go
+END
+texception.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/texception.go
+END
+tiostream_transport.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tiostream_transport.go
+END
+_testmain.go
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/_testmain.go
+END
+tprotocol_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/tprotocol_test.go
+END
+tnonblocking_server_socket.go
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tnonblocking_server_socket.go
+END
+tmemory_buffer.go
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tmemory_buffer.go
+END
+tnumeric.go
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tnumeric.go
+END
+tsimple_json_protocol_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1172901/thrift/trunk/lib/go/thrift/tsimple_json_protocol_test.go
+END
+tbinary_protocol_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tbinary_protocol_test.go
+END
+tserver_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tserver_test.go
+END
+tprocessor_factory.go
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tprocessor_factory.go
+END
+tserver.go
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tserver.go
+END
+tcompact_protocol.go
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tcompact_protocol.go
+END
+tframed_transport_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tframed_transport_test.go
+END
+tframed_transport.go
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tframed_transport.go
+END
+tnonblocking_socket.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/tnonblocking_socket.go
+END
+thttp_client_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/thttp_client_test.go
+END
+tnonblocking_transport_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tnonblocking_transport_test.go
+END
+tprocessor.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tprocessor.go
+END
+tsimple_server.go
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tsimple_server.go
+END
+tapplication_exception_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tapplication_exception_test.go
+END
+ttype.go
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/ttype.go
+END
+tcontainer.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tcontainer.go
+END
+ttransport_factory.go
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/ttransport_factory.go
+END
+tstruct.go
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tstruct.go
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/Makefile
+END
+tprotocol_factory.go
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tprotocol_factory.go
+END
+tsocket.go
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/tsocket.go
+END
+ttransport_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/ttransport_test.go
+END
+ttransport.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/thrift/ttransport.go
+END
+tiostream_transport_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tiostream_transport_test.go
+END
+tmemory_buffer_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tmemory_buffer_test.go
+END
+tprotocol.go
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tprotocol.go
+END
+tsimple_json_protocol.go
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tsimple_json_protocol.go
+END
+tbinary_protocol.go
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tbinary_protocol.go
+END
+tcompact_protocol_test.go
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tcompact_protocol_test.go
+END
+tbase.go
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tbase.go
+END
+ttransport_exception.go
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/ttransport_exception.go
+END
+tlist.go
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tlist.go
+END
+tmap.go
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tmap.go
+END
+thttp_client.go
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1172901/thrift/trunk/lib/go/thrift/thttp_client.go
+END
+tserver_socket.go
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tserver_socket.go
+END
+tnonblocking_transport.go
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tnonblocking_transport.go
+END
+tprotocol_exception.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tprotocol_exception.go
+END
+tapplication_exception.go
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tapplication_exception.go
+END
+tserver_transport.go
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tserver_transport.go
+END
+tfield.go
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tfield.go
+END
+tmessage.go
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tmessage.go
+END
+tmessagetype.go
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tmessagetype.go
+END
+tcompare.go
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/thrift/tcompare.go
+END

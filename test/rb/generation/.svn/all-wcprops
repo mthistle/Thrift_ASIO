@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/rb/generation
+END
+test_enum.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/rb/generation/test_enum.rb
+END
+test_struct.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/rb/generation/test_struct.rb
+END

@@ -1,0 +1,122 @@
+10
+
+dir
+1304085
+http://svn.apache.org/repos/asf/thrift/trunk/lib
+http://svn.apache.org/repos/asf
+
+
+
+2012-03-22T21:49:10.071216Z
+1304085
+jfarrell
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+c_glib
+dir
+
+csharp
+dir
+
+java
+dir
+
+nodejs
+dir
+
+erl
+dir
+
+cpp
+dir
+
+d
+dir
+
+cocoa
+dir
+
+as3
+dir
+
+st
+dir
+
+php
+dir
+
+py
+dir
+
+ocaml
+dir
+
+perl
+dir
+
+rb
+dir
+
+javame
+dir
+
+go
+dir
+
+delphi
+dir
+
+Makefile.am
+file
+
+
+
+
+2012-05-18T18:09:52.000000Z
+34270ec8dd4f1a3b71ac51b4f48aca02
+2012-03-22T21:49:10.071216Z
+1304085
+jfarrell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1505
+
+hs
+dir
+
+js
+dir
+

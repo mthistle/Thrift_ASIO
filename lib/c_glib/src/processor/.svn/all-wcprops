@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/processor
+END
+thrift_processor.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/processor/thrift_processor.c
+END
+thrift_processor.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/processor/thrift_processor.h
+END

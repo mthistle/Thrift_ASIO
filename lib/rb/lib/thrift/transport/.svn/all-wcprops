@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1213837/thrift/trunk/lib/rb/lib/thrift/transport
+END
+memory_buffer_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1153093/thrift/trunk/lib/rb/lib/thrift/transport/memory_buffer_transport.rb
+END
+buffered_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/lib/thrift/transport/buffered_transport.rb
+END
+io_stream_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/io_stream_transport.rb
+END
+server_socket.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/server_socket.rb
+END
+unix_server_socket.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/unix_server_socket.rb
+END
+base_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/lib/thrift/transport/base_transport.rb
+END
+socket.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1213837/thrift/trunk/lib/rb/lib/thrift/transport/socket.rb
+END
+http_client_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/http_client_transport.rb
+END
+framed_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/lib/thrift/transport/framed_transport.rb
+END
+unix_socket.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/unix_socket.rb
+END
+base_server_transport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/lib/thrift/transport/base_server_transport.rb
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol
+END
+thrift_binary_protocol_factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_binary_protocol_factory.h
+END
+thrift_protocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_protocol.c
+END
+thrift_binary_protocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_binary_protocol.c
+END
+thrift_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_protocol.h
+END
+thrift_protocol_factory.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_protocol_factory.c
+END
+thrift_binary_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_binary_protocol.h
+END
+thrift_binary_protocol_factory.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_binary_protocol_factory.c
+END
+thrift_protocol_factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/protocol/thrift_protocol_factory.h
+END

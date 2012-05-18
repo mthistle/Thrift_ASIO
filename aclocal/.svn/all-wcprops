@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1304085/thrift/trunk/aclocal
+END
+ax_thrift_internal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1173436/thrift/trunk/aclocal/ax_thrift_internal.m4
+END
+ax_boost_base.m4
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1031148/thrift/trunk/aclocal/ax_boost_base.m4
+END
+ax_check_openssl.m4
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1304085/thrift/trunk/aclocal/ax_check_openssl.m4
+END
+ax_prog_perl_modules.m4
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/aclocal/ax_prog_perl_modules.m4
+END
+ax_signed_right_shift.m4
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1028168/thrift/trunk/aclocal/ax_signed_right_shift.m4
+END
+ax_dmd.m4
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/asf/!svn/ver/1304085/thrift/trunk/aclocal/ax_dmd.m4
+END
+ax_lib_zlib.m4
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/aclocal/ax_lib_zlib.m4
+END
+ax_javac_and_java.m4
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1127686/thrift/trunk/aclocal/ax_javac_and_java.m4
+END
+ax_lib_event.m4
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1154040/thrift/trunk/aclocal/ax_lib_event.m4
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1212569/thrift/trunk/contrib
+END
+thrift.el
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/thrift.el
+END
+thrift_dump.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/thrift_dump.cpp
+END
+mingw-cross-compile.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1086705/thrift/trunk/contrib/mingw-cross-compile.sh
+END
+create-debian-packages.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/create-debian-packages.sh
+END
+thrift.spec
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/thrift.spec
+END
+parse_profiling.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/parse_profiling.py
+END
+thrift.vim
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/thrift.vim
+END

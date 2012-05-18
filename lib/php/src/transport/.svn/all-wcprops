@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport
+END
+TNullTransport.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/transport/TNullTransport.php
+END
+TSocket.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TSocket.php
+END
+TFramedTransport.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TFramedTransport.php
+END
+TTransport.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TTransport.php
+END
+THttpClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/THttpClient.php
+END
+TBufferedTransport.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TBufferedTransport.php
+END
+TServerSocket.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/transport/TServerSocket.php
+END
+TMemoryBuffer.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TMemoryBuffer.php
+END
+TSocketPool.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/transport/TSocketPool.php
+END
+TPhpStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/transport/TPhpStream.php
+END
+TServerTransport.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/transport/TServerTransport.php
+END
+TTransportFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/php/src/transport/TTransportFactory.php
+END

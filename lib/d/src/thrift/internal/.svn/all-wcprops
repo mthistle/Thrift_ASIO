@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal
+END
+endian.d
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/endian.d
+END
+resource_pool.d
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/resource_pool.d
+END
+ctfe.d
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/ctfe.d
+END
+ssl.d
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/ssl.d
+END
+codegen.d
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/codegen.d
+END
+algorithm.d
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/algorithm.d
+END
+traits.d
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/traits.d
+END
+socket.d
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/socket.d
+END
+ssl_bio.d
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1304085/thrift/trunk/lib/d/src/thrift/internal/ssl_bio.d
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1150692/thrift/trunk/tutorial/java
+END
+JavaClient
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1090454/thrift/trunk/tutorial/java/JavaClient
+END
+JavaServer
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1090454/thrift/trunk/tutorial/java/JavaServer
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1150692/thrift/trunk/tutorial/java/README
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1090454/thrift/trunk/tutorial/java/build.xml
+END

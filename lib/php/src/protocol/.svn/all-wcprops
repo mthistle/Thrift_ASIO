@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1235403/thrift/trunk/lib/php/src/protocol
+END
+TBinaryProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/protocol/TBinaryProtocol.php
+END
+TCompactProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1207960/thrift/trunk/lib/php/src/protocol/TCompactProtocol.php
+END
+TJSONProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1235403/thrift/trunk/lib/php/src/protocol/TJSONProtocol.php
+END
+TBinarySerializer.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1161968/thrift/trunk/lib/php/src/protocol/TBinarySerializer.php
+END
+TProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1179907/thrift/trunk/lib/php/src/protocol/TProtocol.php
+END

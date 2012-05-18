@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1230797/thrift/trunk/test/nodejs
+END
+server.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1230797/thrift/trunk/test/nodejs/server.js
+END
+package.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1230797/thrift/trunk/test/nodejs/package.json
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1230797/thrift/trunk/test/nodejs/Makefile.am
+END
+client.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1230797/thrift/trunk/test/nodejs/client.js
+END

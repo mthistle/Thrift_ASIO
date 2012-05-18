@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1292148/thrift/trunk/lib/csharp/src/Protocol
+END
+TProtocolFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TProtocolFactory.cs
+END
+TSet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TSet.cs
+END
+TJSONProtocol.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1211880/thrift/trunk/lib/csharp/src/Protocol/TJSONProtocol.cs
+END
+TProtocolUtil.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TProtocolUtil.cs
+END
+TProtocol.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1211880/thrift/trunk/lib/csharp/src/Protocol/TProtocol.cs
+END
+TBase64Utils.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TBase64Utils.cs
+END
+TBinaryProtocol.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1211880/thrift/trunk/lib/csharp/src/Protocol/TBinaryProtocol.cs
+END
+TBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TBase.cs
+END
+TList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TList.cs
+END
+TMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TMap.cs
+END
+TProtocolException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1292148/thrift/trunk/lib/csharp/src/Protocol/TProtocolException.cs
+END
+TType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TType.cs
+END
+TField.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TField.cs
+END
+TStruct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TStruct.cs
+END
+TMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TMessage.cs
+END
+TMessageType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/csharp/src/Protocol/TMessageType.cs
+END

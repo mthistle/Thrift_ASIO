@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/asf/!svn/ver/1211736/thrift/trunk/lib/cpp/src/async
+END
+TAsyncChannel.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1162937/thrift/trunk/lib/cpp/src/async/TAsyncChannel.h
+END
+TAsyncBufferProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1084656/thrift/trunk/lib/cpp/src/async/TAsyncBufferProcessor.h
+END
+TAsyncProtocolProcessor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/async/TAsyncProtocolProcessor.cpp
+END
+TEvhttpServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1167679/thrift/trunk/lib/cpp/src/async/TEvhttpServer.cpp
+END
+TAsyncDispatchProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1211736/thrift/trunk/lib/cpp/src/async/TAsyncDispatchProcessor.h
+END
+TAsyncProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1175308/thrift/trunk/lib/cpp/src/async/TAsyncProcessor.h
+END
+TEvhttpClientChannel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1167679/thrift/trunk/lib/cpp/src/async/TEvhttpClientChannel.cpp
+END
+TAsyncProtocolProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1084656/thrift/trunk/lib/cpp/src/async/TAsyncProtocolProcessor.h
+END
+TAsyncChannel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1151940/thrift/trunk/lib/cpp/src/async/TAsyncChannel.cpp
+END
+TEvhttpServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/async/TEvhttpServer.h
+END
+TEvhttpClientChannel.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1151940/thrift/trunk/lib/cpp/src/async/TEvhttpClientChannel.h
+END

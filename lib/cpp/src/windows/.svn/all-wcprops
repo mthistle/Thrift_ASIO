@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1294819/thrift/trunk/lib/cpp/src/windows
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/StdAfx.h
+END
+GetTimeOfDay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/GetTimeOfDay.cpp
+END
+TargetVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1241171/thrift/trunk/lib/cpp/src/windows/TargetVersion.h
+END
+Operators.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/Operators.h
+END
+SocketPair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/SocketPair.cpp
+END
+TWinsockSingleton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/TWinsockSingleton.cpp
+END
+WinFcntl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1182024/thrift/trunk/lib/cpp/src/windows/WinFcntl.cpp
+END
+GetTimeOfDay.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/GetTimeOfDay.h
+END
+SocketPair.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/SocketPair.h
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/StdAfx.cpp
+END
+TWinsockSingleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1171777/thrift/trunk/lib/cpp/src/windows/TWinsockSingleton.h
+END
+WinFcntl.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1182024/thrift/trunk/lib/cpp/src/windows/WinFcntl.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1294819/thrift/trunk/lib/cpp/src/windows/config.h
+END
+force_inc.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1241171/thrift/trunk/lib/cpp/src/windows/force_inc.h
+END

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 49
+Makefile.in
+Makefile
+deps
+ebin
+.generated
+.eunit
+
+END

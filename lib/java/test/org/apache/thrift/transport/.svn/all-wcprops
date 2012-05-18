@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/transport
+END
+ReadCountingTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/ReadCountingTransport.java
+END
+TestTFramedTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestTFramedTransport.java
+END
+TestAutoExpandingBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestAutoExpandingBuffer.java
+END
+TestTSaslTransports.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestTSaslTransports.java
+END
+TestAutoExpandingBufferWriteTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestAutoExpandingBufferWriteTransport.java
+END
+TestAutoExpandingBufferReadTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestAutoExpandingBufferReadTransport.java
+END
+TestTMemoryInputTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestTMemoryInputTransport.java
+END
+TestTSSLTransportFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestTSSLTransportFactory.java
+END
+TestTFastFramedTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/TestTFastFramedTransport.java
+END
+WriteCountingTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/transport/WriteCountingTransport.java
+END

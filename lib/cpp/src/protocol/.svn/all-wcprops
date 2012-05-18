@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1213055/thrift/trunk/lib/cpp/src/protocol
+END
+TBase64Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/protocol/TBase64Utils.h
+END
+TProtocolTap.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/protocol/TProtocolTap.h
+END
+TBinaryProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1211842/thrift/trunk/lib/cpp/src/protocol/TBinaryProtocol.h
+END
+TVirtualProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/protocol/TVirtualProtocol.h
+END
+TDebugProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/protocol/TDebugProtocol.h
+END
+TCompactProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1039885/thrift/trunk/lib/cpp/src/protocol/TCompactProtocol.h
+END
+TDenseProtocol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/protocol/TDenseProtocol.cpp
+END
+TProtocolException.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/protocol/TProtocolException.h
+END
+TDenseProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1211842/thrift/trunk/lib/cpp/src/protocol/TDenseProtocol.h
+END
+TJSONProtocol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/protocol/TJSONProtocol.cpp
+END
+TBinaryProtocol.tcc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1068672/thrift/trunk/lib/cpp/src/protocol/TBinaryProtocol.tcc
+END
+TCompactProtocol.tcc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/protocol/TCompactProtocol.tcc
+END
+TJSONProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1141710/thrift/trunk/lib/cpp/src/protocol/TJSONProtocol.h
+END
+TBase64Utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1213055/thrift/trunk/lib/cpp/src/protocol/TBase64Utils.cpp
+END
+TProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1169963/thrift/trunk/lib/cpp/src/protocol/TProtocol.h
+END
+TDebugProtocol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/protocol/TDebugProtocol.cpp
+END

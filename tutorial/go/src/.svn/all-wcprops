@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src
+END
+GoServer.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src/GoServer.go
+END
+GoClient.go
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src/GoClient.go
+END
+main.go
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src/main.go
+END
+CalculatorHandler.go
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src/CalculatorHandler.go
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1072478/thrift/trunk/tutorial/go/src/Makefile
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1137004/thrift/trunk/lib/c_glib/test
+END
+glib.suppress
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/c_glib/test/glib.suppress
+END
+testbufferedtransport.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testbufferedtransport.c
+END
+testthrifttestclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1137004/thrift/trunk/lib/c_glib/test/testthrifttestclient.cpp
+END
+testsimpleserver.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testsimpleserver.c
+END
+testthrifttest.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testthrifttest.c
+END
+testmemorybuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testmemorybuffer.c
+END
+teststruct.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/teststruct.c
+END
+testtransportsocket.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testtransportsocket.c
+END
+testbinaryprotocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1040738/thrift/trunk/lib/c_glib/test/testbinaryprotocol.c
+END
+testoptionalrequired.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testoptionalrequired.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1058692/thrift/trunk/lib/c_glib/test/Makefile.am
+END
+testdebugproto.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testdebugproto.c
+END
+testframedtransport.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/test/testframedtransport.c
+END

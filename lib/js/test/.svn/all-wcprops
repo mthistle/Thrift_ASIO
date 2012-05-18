@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1228717/thrift/trunk/lib/js/test
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1153673/thrift/trunk/lib/js/test/test.html
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1082649/thrift/trunk/lib/js/test/Makefile.am
+END
+test.js
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1167032/thrift/trunk/lib/js/test/test.js
+END
+jsTestDriver.conf
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1153673/thrift/trunk/lib/js/test/jsTestDriver.conf
+END
+phantomjs-qunit.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1152373/thrift/trunk/lib/js/test/phantomjs-qunit.js
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1228717/thrift/trunk/lib/js/test/build.xml
+END

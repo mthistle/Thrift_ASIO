@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1095491/thrift/trunk/lib/java/Makefile.am
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/java/build.properties
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1235438/thrift/trunk/lib/java/README
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1221828/thrift/trunk/lib/java/build.xml
+END

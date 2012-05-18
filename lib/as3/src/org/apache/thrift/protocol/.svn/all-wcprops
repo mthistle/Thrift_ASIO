@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol
+END
+TProtocolFactory.as
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TProtocolFactory.as
+END
+TList.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TList.as
+END
+TProtocolError.as
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TProtocolError.as
+END
+TSet.as
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TSet.as
+END
+TMap.as
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TMap.as
+END
+TProtocolUtil.as
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TProtocolUtil.as
+END
+TProtocol.as
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TProtocol.as
+END
+TType.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TType.as
+END
+TField.as
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TField.as
+END
+TMessage.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TMessage.as
+END
+TStruct.as
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TStruct.as
+END
+TBinaryProtocol.as
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TBinaryProtocol.as
+END
+TMessageType.as
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/as3/src/org/apache/thrift/protocol/TMessageType.as
+END

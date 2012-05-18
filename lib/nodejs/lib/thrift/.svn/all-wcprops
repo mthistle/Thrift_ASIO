@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift
+END
+server.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift/server.js
+END
+index.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1183221/thrift/trunk/lib/nodejs/lib/thrift/index.js
+END
+transport.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1090565/thrift/trunk/lib/nodejs/lib/thrift/transport.js
+END
+connection.js
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift/connection.js
+END
+binary_parser.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift/binary_parser.js
+END
+thrift.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift/thrift.js
+END
+protocol.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1205576/thrift/trunk/lib/nodejs/lib/thrift/protocol.js
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/protocol
+END
+TBinaryProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/protocol/TBinaryProtocol.py
+END
+TCompactProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/protocol/TCompactProtocol.py
+END
+fastbinary.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1170180/thrift/trunk/lib/py/src/protocol/fastbinary.c
+END
+TBase.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/protocol/TBase.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1169492/thrift/trunk/lib/py/src/protocol/__init__.py
+END
+TProtocol.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/protocol/TProtocol.py
+END

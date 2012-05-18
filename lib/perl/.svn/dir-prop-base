@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 54
+Makefile.in
+Makefile
+Makefile-perl.mk
+pm_to_blib
+blib
+
+END

@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 48
+gen-py.twisted
+_trial_temp
+Makefile
+Makefile.in
+
+END

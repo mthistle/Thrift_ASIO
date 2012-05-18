@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1304085/thrift/trunk/compiler/cpp/src
+END
+thriftl.ll
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1185688/thrift/trunk/compiler/cpp/src/thriftl.ll
+END
+md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/src/md5.c
+END
+main.cc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1185688/thrift/trunk/compiler/cpp/src/main.cc
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1159593/thrift/trunk/compiler/cpp/src/globals.h
+END
+thrifty.yy
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1214547/thrift/trunk/compiler/cpp/src/thrifty.yy
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/src/main.h
+END
+platform.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/src/platform.h
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/src/md5.h
+END

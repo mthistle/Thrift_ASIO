@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1039898/thrift/trunk/test/py.twisted
+END
+test_suite.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/py.twisted/test_suite.py
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1028168/thrift/trunk/test/py.twisted/Makefile.am
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1294824/thrift/trunk/lib/cpp/src
+END
+TReflectionLocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/TReflectionLocal.h
+END
+TLogging.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/TLogging.h
+END
+Thrift.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/Thrift.cpp
+END
+VirtualProfiling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/VirtualProfiling.cpp
+END
+Thrift.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1174801/thrift/trunk/lib/cpp/src/Thrift.h
+END
+TApplicationException.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/TApplicationException.cpp
+END
+TProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1164190/thrift/trunk/lib/cpp/src/TProcessor.h
+END
+TDispatchProcessor.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1211736/thrift/trunk/lib/cpp/src/TDispatchProcessor.h
+END
+TApplicationException.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1153412/thrift/trunk/lib/cpp/src/TApplicationException.h
+END

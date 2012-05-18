@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test/org/apache/thrift
+END
+TestStruct.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1225035/thrift/trunk/lib/java/test/org/apache/thrift/TestStruct.java
+END
+TestShortStack.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/TestShortStack.java
+END
+TestTDeserializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/TestTDeserializer.java
+END
+TestOptionals.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1221828/thrift/trunk/lib/java/test/org/apache/thrift/TestOptionals.java
+END
+TestTEnumHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/TestTEnumHelper.java
+END
+Fixtures.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1210765/thrift/trunk/lib/java/test/org/apache/thrift/Fixtures.java
+END
+TestTUnion.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1173418/thrift/trunk/lib/java/test/org/apache/thrift/TestTUnion.java
+END
+TestTBaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1166292/thrift/trunk/lib/java/test/org/apache/thrift/TestTBaseHelper.java
+END

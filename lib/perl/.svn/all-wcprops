@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/perl
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/perl/Makefile.PL
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/perl/Makefile.am
+END
+test.pl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/perl/test.pl
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/perl/README
+END

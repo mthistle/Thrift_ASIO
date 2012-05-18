@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1177458/thrift/trunk/lib/java/test/org/apache/thrift/protocol
+END
+BenchmarkProtocols.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1177458/thrift/trunk/lib/java/test/org/apache/thrift/protocol/BenchmarkProtocols.java
+END
+TestTJSONProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/protocol/TestTJSONProtocol.java
+END
+TestTTupleProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1176072/thrift/trunk/lib/java/test/org/apache/thrift/protocol/TestTTupleProtocol.java
+END
+TestTProtocolUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/protocol/TestTProtocolUtil.java
+END
+TestTBinaryProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/protocol/TestTBinaryProtocol.java
+END
+ProtocolTestBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1083890/thrift/trunk/lib/java/test/org/apache/thrift/protocol/ProtocolTestBase.java
+END
+TestTCompactProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/org/apache/thrift/protocol/TestTCompactProtocol.java
+END

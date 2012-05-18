@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/py/setup.py
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1202686/thrift/trunk/lib/py/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/py/README
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/py/setup.cfg
+END

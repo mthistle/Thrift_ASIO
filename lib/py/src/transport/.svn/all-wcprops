@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport
+END
+TSocket.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/TSocket.py
+END
+TSSLSocket.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/TSSLSocket.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/__init__.py
+END
+TTransport.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/TTransport.py
+END
+TZlibTransport.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/TZlibTransport.py
+END
+THttpClient.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/THttpClient.py
+END
+TTwisted.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/transport/TTwisted.py
+END

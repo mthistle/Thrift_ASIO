@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1294824/thrift/trunk/lib/cpp
+END
+libthrift.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1202843/thrift/trunk/lib/cpp/libthrift.vcxproj
+END
+libthriftnb.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1202843/thrift/trunk/lib/cpp/libthriftnb.vcxproj
+END
+thrift-nb.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/thrift-nb.pc.in
+END
+thrift.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/thrift.pc.in
+END
+README_WINDOWS
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1241171/thrift/trunk/lib/cpp/README_WINDOWS
+END
+libthrift.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1182024/thrift/trunk/lib/cpp/libthrift.vcxproj.filters
+END
+libthriftnb.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1182024/thrift/trunk/lib/cpp/libthriftnb.vcxproj.filters
+END
+thrift-qt.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1242900/thrift/trunk/lib/cpp/thrift-qt.pc.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1242900/thrift/trunk/lib/cpp/Makefile.am
+END
+thrift.sln
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1182024/thrift/trunk/lib/cpp/thrift.sln
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/README
+END
+README.SSL
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1091553/thrift/trunk/lib/cpp/README.SSL
+END
+thrift-z.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/thrift-z.pc.in
+END

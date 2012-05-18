@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1198543/thrift/trunk/lib/rb/ext
+END
+strlcpy.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1198503/thrift/trunk/lib/rb/ext/strlcpy.c
+END
+protocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/protocol.c
+END
+memory_buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1153093/thrift/trunk/lib/rb/ext/memory_buffer.c
+END
+strlcpy.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1198543/thrift/trunk/lib/rb/ext/strlcpy.h
+END
+thrift_native.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/ext/thrift_native.c
+END
+protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/protocol.h
+END
+memory_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/memory_buffer.h
+END
+compact_protocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/ext/compact_protocol.c
+END
+compact_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/compact_protocol.h
+END
+constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/ext/constants.h
+END
+binary_protocol_accelerated.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1140780/thrift/trunk/lib/rb/ext/binary_protocol_accelerated.c
+END
+struct.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1198503/thrift/trunk/lib/rb/ext/struct.c
+END
+binary_protocol_accelerated.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/binary_protocol_accelerated.h
+END
+extconf.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1036267/thrift/trunk/lib/rb/ext/extconf.rb
+END
+struct.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/struct.h
+END
+macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/rb/ext/macros.h
+END

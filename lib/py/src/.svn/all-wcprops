@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src
+END
+TSCons.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/TSCons.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/py/src/__init__.py
+END
+Thrift.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/Thrift.py
+END
+TSerialization.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1226890/thrift/trunk/lib/py/src/TSerialization.py
+END

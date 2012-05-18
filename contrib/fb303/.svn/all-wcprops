@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1146484/thrift/trunk/contrib/fb303
+END
+TClientInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1037500/thrift/trunk/contrib/fb303/TClientInfo.cpp
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/LICENSE
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/configure.ac
+END
+global_footer.mk
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/global_footer.mk
+END
+TClientInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/TClientInfo.h
+END
+bootstrap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/bootstrap.sh
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/acinclude.m4
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/README
+END
+global_header.mk
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/fb303/global_header.mk
+END

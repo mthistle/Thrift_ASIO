@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1303672/thrift/trunk/lib/erl/test
+END
+Thrift1475.thrift
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1303666/thrift/trunk/lib/erl/test/Thrift1475.thrift
+END
+test_server.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/test_server.erl
+END
+Thrift1151.thrift
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/Thrift1151.thrift
+END
+test_thrift_1151.erl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/test_thrift_1151.erl
+END
+test_membuffer.erl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/test_membuffer.erl
+END
+stress_server.erl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/stress_server.erl
+END
+test_disklog.erl
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/test_disklog.erl
+END
+test_client.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/asf/!svn/ver/1137870/thrift/trunk/lib/erl/test/test_client.erl
+END

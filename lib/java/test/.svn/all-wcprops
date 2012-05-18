@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/test
+END
+.keystore
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/.keystore
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/log4j.properties
+END
+.truststore
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/test/.truststore
+END

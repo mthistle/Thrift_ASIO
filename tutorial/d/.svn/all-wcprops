@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1304085/thrift/trunk/tutorial/d
+END
+client.d
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1304085/thrift/trunk/tutorial/d/client.d
+END
+server.d
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1304085/thrift/trunk/tutorial/d/server.d
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1304085/thrift/trunk/tutorial/d/Makefile
+END
+async_client.d
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1304085/thrift/trunk/tutorial/d/async_client.d
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repos/asf/!svn/ver/1304085/thrift/trunk
+END
+rat_exclude
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1028168/thrift/trunk/rat_exclude
+END
+cleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1028168/thrift/trunk/cleanup.sh
+END
+NOTICE
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1028168/thrift/trunk/NOTICE
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1028168/thrift/trunk/LICENSE
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1304085/thrift/trunk/configure.ac
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1235467/thrift/trunk/.gitignore
+END
+bootstrap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1063919/thrift/trunk/bootstrap.sh
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/repos/asf/!svn/ver/1157426/thrift/trunk/CHANGES
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1202686/thrift/trunk/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/asf/!svn/ver/1077939/thrift/trunk/NEWS
+END
+DISCLAIMER
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/asf/!svn/ver/1028168/thrift/trunk/DISCLAIMER
+END
+CONTRIBUTORS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1028168/thrift/trunk/CONTRIBUTORS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1030901/thrift/trunk/README
+END

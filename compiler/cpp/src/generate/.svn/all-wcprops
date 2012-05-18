@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1304085/thrift/trunk/compiler/cpp/src/generate
+END
+t_perl_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1091546/thrift/trunk/compiler/cpp/src/generate/t_perl_generator.cc
+END
+t_javame_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1160333/thrift/trunk/compiler/cpp/src/generate/t_javame_generator.cc
+END
+t_rb_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1295423/thrift/trunk/compiler/cpp/src/generate/t_rb_generator.cc
+END
+t_html_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1133615/thrift/trunk/compiler/cpp/src/generate/t_html_generator.cc
+END
+t_go_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1171520/thrift/trunk/compiler/cpp/src/generate/t_go_generator.cc
+END
+t_delphi_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1298265/thrift/trunk/compiler/cpp/src/generate/t_delphi_generator.cc
+END
+t_hs_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1091546/thrift/trunk/compiler/cpp/src/generate/t_hs_generator.cc
+END
+t_generator_registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/src/generate/t_generator_registry.h
+END
+t_js_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1230797/thrift/trunk/compiler/cpp/src/generate/t_js_generator.cc
+END
+t_c_glib_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1040415/thrift/trunk/compiler/cpp/src/generate/t_c_glib_generator.cc
+END
+t_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1204495/thrift/trunk/compiler/cpp/src/generate/t_generator.cc
+END
+t_csharp_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1234095/thrift/trunk/compiler/cpp/src/generate/t_csharp_generator.cc
+END
+t_java_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1295997/thrift/trunk/compiler/cpp/src/generate/t_java_generator.cc
+END
+t_generator.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1161271/thrift/trunk/compiler/cpp/src/generate/t_generator.h
+END
+t_erl_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1303666/thrift/trunk/compiler/cpp/src/generate/t_erl_generator.cc
+END
+t_cpp_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1292508/thrift/trunk/compiler/cpp/src/generate/t_cpp_generator.cc
+END
+t_d_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1304085/thrift/trunk/compiler/cpp/src/generate/t_d_generator.cc
+END
+t_cocoa_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1236503/thrift/trunk/compiler/cpp/src/generate/t_cocoa_generator.cc
+END
+t_as3_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1147700/thrift/trunk/compiler/cpp/src/generate/t_as3_generator.cc
+END
+t_st_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1091546/thrift/trunk/compiler/cpp/src/generate/t_st_generator.cc
+END
+t_php_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1233930/thrift/trunk/compiler/cpp/src/generate/t_php_generator.cc
+END
+t_py_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1180119/thrift/trunk/compiler/cpp/src/generate/t_py_generator.cc
+END
+t_ocaml_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1091546/thrift/trunk/compiler/cpp/src/generate/t_ocaml_generator.cc
+END
+t_xsd_generator.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1036250/thrift/trunk/compiler/cpp/src/generate/t_xsd_generator.cc
+END
+t_oop_generator.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1160943/thrift/trunk/compiler/cpp/src/generate/t_oop_generator.h
+END

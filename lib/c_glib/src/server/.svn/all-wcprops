@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/server
+END
+thrift_simple_server.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/server/thrift_simple_server.c
+END
+thrift_simple_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/server/thrift_simple_server.h
+END
+thrift_server.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/server/thrift_server.c
+END
+thrift_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/server/thrift_server.h
+END

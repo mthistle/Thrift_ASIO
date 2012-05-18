@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1153295/thrift/trunk/lib/javame/src/org/apache/thrift
+END
+TException.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TException.java
+END
+TByteArrayOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TByteArrayOutputStream.java
+END
+TProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TProcessor.java
+END
+TServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TServiceClient.java
+END
+TApplicationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TApplicationException.java
+END
+TDeserializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TDeserializer.java
+END
+TEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TEnum.java
+END
+TFieldRequirementType.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TFieldRequirementType.java
+END
+TProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TProcessorFactory.java
+END
+TSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TSerializer.java
+END
+TBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/javame/src/org/apache/thrift/TBase.java
+END
+TBaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1153295/thrift/trunk/lib/javame/src/org/apache/thrift/TBaseHelper.java
+END

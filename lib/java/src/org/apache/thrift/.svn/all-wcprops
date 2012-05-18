@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1296060/thrift/trunk/lib/java/src/org/apache/thrift
+END
+TProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TProcessor.java
+END
+TDeserializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1063820/thrift/trunk/lib/java/src/org/apache/thrift/TDeserializer.java
+END
+TApplicationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TApplicationException.java
+END
+EncodingUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1221828/thrift/trunk/lib/java/src/org/apache/thrift/EncodingUtils.java
+END
+TFieldIdEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TFieldIdEnum.java
+END
+TServiceClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/TServiceClientFactory.java
+END
+TUnion.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/asf/!svn/ver/1294925/thrift/trunk/lib/java/src/org/apache/thrift/TUnion.java
+END
+TException.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TException.java
+END
+TByteArrayOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TByteArrayOutputStream.java
+END
+TServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1160883/thrift/trunk/lib/java/src/org/apache/thrift/TServiceClient.java
+END
+ProcessFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1244272/thrift/trunk/lib/java/src/org/apache/thrift/ProcessFunction.java
+END
+ShortStack.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/ShortStack.java
+END
+TEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TEnum.java
+END
+TEnumHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TEnumHelper.java
+END
+TFieldRequirementType.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TFieldRequirementType.java
+END
+TProcessorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TProcessorFactory.java
+END
+TSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/java/src/org/apache/thrift/TSerializer.java
+END
+TBaseProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1236515/thrift/trunk/lib/java/src/org/apache/thrift/TBaseProcessor.java
+END
+TBaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1166292/thrift/trunk/lib/java/src/org/apache/thrift/TBaseHelper.java
+END
+TBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1126637/thrift/trunk/lib/java/src/org/apache/thrift/TBase.java
+END

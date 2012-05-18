@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1172901/thrift/trunk/lib/go
+END
+Make.deps
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1146167/thrift/trunk/lib/go/Make.deps
+END
+deps.bash
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/deps.bash
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1072478/thrift/trunk/lib/go/Makefile
+END

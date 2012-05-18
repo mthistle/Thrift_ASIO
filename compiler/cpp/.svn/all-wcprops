@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1304085/thrift/trunk/compiler/cpp
+END
+version.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1028168/thrift/trunk/compiler/cpp/version.h.in
+END
+compiler.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1214547/thrift/trunk/compiler/cpp/compiler.vcxproj
+END
+compiler.sln
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1174801/thrift/trunk/compiler/cpp/compiler.sln
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1304085/thrift/trunk/compiler/cpp/Makefile.am
+END
+compiler.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1174801/thrift/trunk/compiler/cpp/compiler.vcxproj.filters
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1202686/thrift/trunk/compiler/cpp/README
+END

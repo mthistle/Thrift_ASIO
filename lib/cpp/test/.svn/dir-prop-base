@@ -1,0 +1,21 @@
+K 10
+svn:ignore
+V 220
+.deps
+Makefile.in
+Makefile
+OptionalRequiredTest
+TPipedTransportTest
+UnitTests
+DebugProtoTest
+AllProtocolsTest
+gen-cpp
+Benchmark
+TFDTransportTest
+JSONProtoTest
+TransportTest
+TFileTransportTest
+ZlibTest
+SpecializationTest
+
+END

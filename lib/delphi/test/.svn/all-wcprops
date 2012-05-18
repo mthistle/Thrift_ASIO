@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/asf/!svn/ver/1294798/thrift/trunk/lib/delphi/test
+END
+TestClient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/test/TestClient.pas
+END
+client.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1200551/thrift/trunk/lib/delphi/test/client.dpr
+END
+maketest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1185688/thrift/trunk/lib/delphi/test/maketest.sh
+END
+TestServer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1228965/thrift/trunk/lib/delphi/test/TestServer.pas
+END
+server.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1200538/thrift/trunk/lib/delphi/test/server.dpr
+END
+TestConstants.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1200538/thrift/trunk/lib/delphi/test/TestConstants.pas
+END

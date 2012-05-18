@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1232424/thrift/trunk/lib/cpp/src/concurrency
+END
+BoostMonitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1198339/thrift/trunk/lib/cpp/src/concurrency/BoostMonitor.cpp
+END
+ThreadManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1214547/thrift/trunk/lib/cpp/src/concurrency/ThreadManager.cpp
+END
+Mutex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1213067/thrift/trunk/lib/cpp/src/concurrency/Mutex.cpp
+END
+Exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1166992/thrift/trunk/lib/cpp/src/concurrency/Exception.h
+END
+BoostThreadFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1178176/thrift/trunk/lib/cpp/src/concurrency/BoostThreadFactory.cpp
+END
+ThreadManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/concurrency/ThreadManager.h
+END
+Mutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1213067/thrift/trunk/lib/cpp/src/concurrency/Mutex.h
+END
+PlatformThreadFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1214547/thrift/trunk/lib/cpp/src/concurrency/PlatformThreadFactory.h
+END
+BoostMutex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1198339/thrift/trunk/lib/cpp/src/concurrency/BoostMutex.cpp
+END
+BoostThreadFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1178176/thrift/trunk/lib/cpp/src/concurrency/BoostThreadFactory.h
+END
+TimerManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/concurrency/TimerManager.cpp
+END
+Thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1232424/thrift/trunk/lib/cpp/src/concurrency/Thread.h
+END
+Util.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1165400/thrift/trunk/lib/cpp/src/concurrency/Util.cpp
+END
+TimerManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/src/concurrency/TimerManager.h
+END
+Util.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1165400/thrift/trunk/lib/cpp/src/concurrency/Util.h
+END
+PosixThreadFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1214547/thrift/trunk/lib/cpp/src/concurrency/PosixThreadFactory.cpp
+END
+FunctionRunner.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1210741/thrift/trunk/lib/cpp/src/concurrency/FunctionRunner.h
+END
+PosixThreadFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/src/concurrency/PosixThreadFactory.h
+END
+Monitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1160944/thrift/trunk/lib/cpp/src/concurrency/Monitor.cpp
+END
+Monitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1160944/thrift/trunk/lib/cpp/src/concurrency/Monitor.h
+END

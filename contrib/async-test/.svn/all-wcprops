@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/async-test
+END
+aggr.thrift
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/async-test/aggr.thrift
+END
+test-server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/async-test/test-server.cpp
+END
+test-leaf.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/async-test/test-leaf.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1028168/thrift/trunk/contrib/async-test/Makefile
+END

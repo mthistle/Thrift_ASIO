@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/asf/!svn/ver/1294798/thrift/trunk/lib/delphi/test/codegen
+END
+ReservedKeywords.thrift
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1294798/thrift/trunk/lib/delphi/test/codegen/ReservedKeywords.thrift
+END
+run-Pascal-Codegen-Tests.bat.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1294798/thrift/trunk/lib/delphi/test/codegen/run-Pascal-Codegen-Tests.bat.tmpl
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1294798/thrift/trunk/lib/delphi/test/codegen/README.txt
+END

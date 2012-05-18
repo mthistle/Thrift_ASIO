@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1133611/thrift/trunk/lib/c_glib/src/transport
+END
+thrift_server_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_server_socket.c
+END
+thrift_framed_transport.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_framed_transport.h
+END
+thrift_server_transport.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_server_transport.c
+END
+thrift_transport_factory.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_transport_factory.c
+END
+thrift_server_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_server_socket.h
+END
+thrift_server_transport.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_server_transport.h
+END
+thrift_transport_factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_transport_factory.h
+END
+thrift_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_socket.c
+END
+thrift_transport.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_transport.c
+END
+thrift_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_socket.h
+END
+thrift_buffered_transport.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_buffered_transport.c
+END
+thrift_transport.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_transport.h
+END
+thrift_memory_buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_memory_buffer.c
+END
+thrift_buffered_transport.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_buffered_transport.h
+END
+thrift_memory_buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1039299/thrift/trunk/lib/c_glib/src/transport/thrift_memory_buffer.h
+END
+thrift_framed_transport.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1133611/thrift/trunk/lib/c_glib/src/transport/thrift_framed_transport.c
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/asf/!svn/ver/1072684/thrift/trunk/lib/hs/src/Thrift/Transport
+END
+Handle.hs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1030243/thrift/trunk/lib/hs/src/Thrift/Transport/Handle.hs
+END
+Framed.hs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1072684/thrift/trunk/lib/hs/src/Thrift/Transport/Framed.hs
+END
+HttpClient.hs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/asf/!svn/ver/1030243/thrift/trunk/lib/hs/src/Thrift/Transport/HttpClient.hs
+END

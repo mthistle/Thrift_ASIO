@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1236529/thrift/trunk/lib/cpp/test
+END
+RWMutexStarveTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1213090/thrift/trunk/lib/cpp/test/RWMutexStarveTest.cpp
+END
+DebugProtoTest_extras.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/test/DebugProtoTest_extras.cpp
+END
+ZlibTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1213090/thrift/trunk/lib/cpp/test/ZlibTest.cpp
+END
+TPipedTransportTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1213090/thrift/trunk/lib/cpp/test/TPipedTransportTest.cpp
+END
+GenericHelpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/GenericHelpers.h
+END
+AllProtocolTests.tcc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/AllProtocolTests.tcc
+END
+DebugProtoTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1039885/thrift/trunk/lib/cpp/test/DebugProtoTest.cpp
+END
+AllProtocolTests.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1036250/thrift/trunk/lib/cpp/test/AllProtocolTests.cpp
+END
+SpecializationTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1039885/thrift/trunk/lib/cpp/test/SpecializationTest.cpp
+END
+TFileTransportTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/asf/!svn/ver/1165400/thrift/trunk/lib/cpp/test/TFileTransportTest.cpp
+END
+DenseProtoTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/DenseProtoTest.cpp
+END
+UnitTestMain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/asf/!svn/ver/1031148/thrift/trunk/lib/cpp/test/UnitTestMain.cpp
+END
+TMemoryBufferTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/TMemoryBufferTest.cpp
+END
+OptionalRequiredTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/asf/!svn/ver/1236529/thrift/trunk/lib/cpp/test/OptionalRequiredTest.cpp
+END
+ThriftTest_extras.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/ThriftTest_extras.cpp
+END
+TBufferBaseTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/asf/!svn/ver/1031222/thrift/trunk/lib/cpp/test/TBufferBaseTest.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1214547/thrift/trunk/lib/cpp/test/Makefile.am
+END
+TFDTransportTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/cpp/test/TFDTransportTest.cpp
+END
+Benchmark.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/asf/!svn/ver/1213090/thrift/trunk/lib/cpp/test/Benchmark.cpp
+END
+TransportTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1198347/thrift/trunk/lib/cpp/test/TransportTest.cpp
+END
+JSONProtoTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1039885/thrift/trunk/lib/cpp/test/JSONProtoTest.cpp
+END

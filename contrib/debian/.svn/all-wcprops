@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1212569/thrift/trunk/contrib/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/asf/!svn/ver/1212569/thrift/trunk/contrib/debian/control
+END
+dirs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/dirs
+END
+debian
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/debian
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1157426/thrift/trunk/contrib/debian/changelog
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/copyright
+END
+docs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/docs
+END
+libthrift-dev.install
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/libthrift-dev.install
+END
+thrift-doc.install
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/thrift-doc.install
+END
+php5-thrift.dirs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/php5-thrift.dirs
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/asf/!svn/ver/1212324/thrift/trunk/contrib/debian/rules
+END
+thrift-doc.docs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/thrift-doc.docs
+END
+libthrift0.install
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/libthrift0.install
+END
+substvars
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1049288/thrift/trunk/contrib/debian/substvars
+END

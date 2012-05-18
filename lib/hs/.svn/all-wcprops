@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/hs
+END
+Thrift.cabal
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/asf/!svn/ver/1208214/thrift/trunk/lib/hs/Thrift.cabal
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/hs/LICENSE
+END
+Setup.lhs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/hs/Setup.lhs
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/hs/TODO
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/asf/!svn/ver/1063050/thrift/trunk/lib/hs/Makefile.am
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/asf/!svn/ver/1028168/thrift/trunk/lib/hs/README
+END

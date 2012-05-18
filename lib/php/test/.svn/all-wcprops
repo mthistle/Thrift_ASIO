@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/asf/!svn/ver/1235467/thrift/trunk/lib/php/test
+END
+Fixtures.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/asf/!svn/ver/1235403/thrift/trunk/lib/php/test/Fixtures.php
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/asf/!svn/ver/1235467/thrift/trunk/lib/php/test/Makefile.am
+END
